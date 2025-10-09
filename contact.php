@@ -8,5 +8,6 @@
 <body>
     <h1>Contact</h1>
     <p>hoiii</p>
+    <p>hoi</p>
 </body>
 </html>
