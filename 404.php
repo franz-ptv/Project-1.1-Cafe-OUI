@@ -11,7 +11,7 @@
         <h1>404!</h1>
         <h2>Something went wrong, we couldn't find what you were looking for.</h2>
         <h2>We are sorry for that, please take a croissant while you go back to the homepage.</h2>
-        <a href="contact.php">Go back home!</a>
+        <a href="index.php">Go back home!</a>
     </div>
 
 </body>
