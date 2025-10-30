@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 
 .menu-container {
-  background: url("../PROJECT/image/beans.jpg") center/cover no-repeat;
+  background: url("images/menu/menu_top_side.png") center/cover no-repeat;
   position: relative;
   font-family: 'Caveat', cursive;
   color: white;
@@ -131,7 +131,7 @@ ul {
   grid-template-columns: 1fr 2fr;
   gap: 2rem;
   align-items: start;
-  background-image: url("../PROJECT/image/christina.jpg");
+  background-image: url("images/menu/croissant.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
