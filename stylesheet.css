@@ -61,8 +61,6 @@ font-size: 130%;
     justify-content: center;
 }
 
-
-
 .FirstText{
     display: inline-block;
     color: rgb(237, 229, 187);
@@ -73,10 +71,6 @@ font-size: 130%;
     padding-bottom: 10%;
 }
 
-
-
-
-
 .SecondText{
     font-size: 3em;
     font-family: 'Caveat';
@@ -86,7 +80,6 @@ font-size: 130%;
     align-self: center;
     padding-top: 10%;
 }
-
 
 .line_blue{
 margin-top: 4px;
@@ -490,7 +483,6 @@ Here starts the second part (beige part)
 
 
 
-
 /*
 Here starts the third part (red part)
 */
@@ -562,7 +554,6 @@ color: white;
     /* background-color: rgb(18, 82, 102); */
 }
 
-
 /*This is the second part of the footer*/
 
 .box2{
@@ -607,9 +598,7 @@ color: white;
     opacity: 2;
 }
 
-
 /* This is the third part of the footer*/
-
 
 .box3{
     background-color: rgb(21, 100, 123);
