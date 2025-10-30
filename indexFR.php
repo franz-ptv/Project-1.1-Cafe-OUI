@@ -15,15 +15,15 @@
     <ul class="navbarul">
 
       <div class="navlogo">
-       <a class = "logo" href="index.php">OUI</a>
+       <a class = "logo" href="indexFR.php">OUI</a>
       </div>
 
       <div>
-        <li><a href="index.php">Accueil</a></li>
-        <li><a href="menu.php">Menu</a></li>
-        <li><a href="about_us.php">À propos</a></li>
-        <li><a href="impression.php">Impression</a></li>
-        <li><a href="contact.php">Contact</a></li>
+        <li><a href="indexFR.php">Accueil</a></li>
+        <li><a href="menuFR.php">Menu</a></li>
+        <li><a href="about_usFR.php">À propos</a></li>
+        <li><a href="impressionFR.php">Impression</a></li>
+        <li><a href="contactFR.php">Contact</a></li>
       </div>
 
       <div>
@@ -49,7 +49,7 @@
     <div class="line_blue"></div>
       <div class = "mid_screen">
         <div><p class="cest">C'est delicieux!</p></div>
-          <a href="menu.php"><button class = "menu_button" >Découvrez notre menu</button></a>
+          <a href="menuFR.php"><button class = "menu_button" >Découvrez notre menu</button></a>
         <div><p class="delicious">Incroyablement bon!</p></div>
       </div>
   <img src="images/home-page/croissant.png" class="croissant_pic" alt="">
@@ -63,7 +63,7 @@
   <div class = "textbox">
     <div class="line_beige"></div>
     <div class="line_beige"></div>
-    <a href="impression.php"><p class="link_exh">Cliquez ici pour voir notre exposition!</p></a>
+    <a href="impressionFR.php"><p class="link_exh">Cliquez ici pour voir notre exposition!</p></a>
     <p class="pared">Un peu de culture française dans votre café préféré!</p>
   </div>
 
@@ -72,18 +72,18 @@
 
       <div class = "box1">
         <div class = "footer_links_row">
-          <a href="index.php">Accueil</a>
-          <a href="about_us.php">À propos</a>
-          <a href="contact.php">Contact</a>
+          <a href="indexFR.php">Accueil</a>
+          <a href="about_usFR.php">À propos</a>
+          <a href="contactFR.php">Contact</a>
         </div>
         <div class = "footer_links_row">
-          <a href="menu.php">Menu</a>
-          <a href="impression.php">Impression</a>
+          <a href="menuFR.php">Menu</a>
+          <a href="impressionFR.php">Impression</a>
         </div>
       </div>
 
       <div class = "box2">
-        <a href="index.php" class = "logo_footer">OUI</a>
+        <a href="indexFR.php" class = "logo_footer">OUI</a>
         <div class = "social_icons">
           <a href="https://facebook.com" target="_blank">
             <img src="images/home-page/facebook-svgrepo-com.svg" alt="Facebook icon">
