@@ -51,12 +51,12 @@
           <a href="menu.php"><button class = "menu_button" >Visit our menu</button></a>
         <div><p class="delicious">Certified delicious!</p></div>
       </div>
-  <img src="croissant.png" class="croissant_pic" alt="">
-  <img src="treat.png" class="treat_pic" alt="">
-  <img src="i_croissant.png" class="croissant_png" alt="">
-  <img src="i_treat.png" class="treat_png" alt="">
-  <img src="i_tea.png" class="tea_png" alt="">
-  <img src="i_coffee.png" class="coffee_png" alt="">
+  <img src="images/home-page/croissant.png" class="croissant_pic" alt="">
+  <img src="images/home-page/treat.png" class="treat_pic" alt="">
+  <img src="images/home-page/i_croissant.png" class="croissant_png" alt="">
+  <img src="images/home-page/i_treat.png" class="treat_png" alt="">
+  <img src="images/home-page/i_tea.png" class="tea_png" alt="">
+  <img src="images/home-page/i_coffee.png" class="coffee_png" alt="">
   </div>
 
   <div class = "textbox">
@@ -85,13 +85,13 @@
         <a href="index.php" class = "logo_footer">OUI</a>
         <div class = "social_icons">
           <a href="https://facebook.com" target="_blank">
-            <img src="facebook-svgrepo-com.svg" alt="Facebook icon">
+            <img src="images/home-page/facebook-svgrepo-com.svg" alt="Facebook icon">
           </a>
           <a href="https://twitter.com" target="_blank">
-            <img src="twitter-color-svgrepo-com.svg" alt="Twitter icon">
+            <img src="images/home-page/twitter-color-svgrepo-com.svg" alt="Twitter icon">
           </a>
           <a href="https://instagram.com" target="_blank">
-            <img src="instagram-1-svgrepo-com.svg" alt="Instagram icon">
+            <img src="images/home-page/instagram-1-svgrepo-com.svg" alt="Instagram icon">
           </a>
         </div>
       </div>
