@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="impression_style.css">
+    <link rel="stylesheet" href="stylesheet.css">
     <title>About Us</title>
 </head>
 <body>
+        <nav class = "navbar">
+    <ul class="navbarul">
+
+      <div class="navlogo">
+       <a class = "logo" href="index.php">OUI</a>
+      </div>
+
+      <div>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="menu.php">Menu</a></li>
+        <li><a href="about_us.php">About Us</a></li>
+        <li><a href="impression.php">Impression</a></li>
+        <li><a href="contact.php">Contact us</a></li>
+      </div>
+
+      <div>
+        <button>Language</button>
+        <button>Dark/Light</button>
+      </div>
+
+    </ul>
+  </nav>
+
     <section class="aboutus"
              style="background: linear-gradient(rgba(186, 211, 238,0.6), rgba(186, 211, 238,0.6)),
              url('images/about-us/about_us_top.png') center/cover no-repeat;">
@@ -42,6 +66,52 @@
     <a class="button" href="impression.php" target="_blank" class="button">
         Try checking out our exhibition page
     </a>
-    </section> 
+    </section>
+  <footer>
+    <div class = "footer_container">
+
+      <div class = "box1">
+        <div class = "footer_links_row">
+          <a href="index.php">Home</a>
+          <a href="index.php">About us</a>
+          <a href="index.php">Contact us</a>
+        </div>
+        <div class = "footer_links_row">
+          <a href="index.php">Menu</a>
+          <a href="index.php">Impression</a>
+        </div>
+      </div>
+
+      <div class = "box2">
+        <a href="index.php" class = "logo_footer">OUI</a>
+        <div class = "social_icons">
+          <a href="https://facebook.com" target="_blank">
+            <img src="facebook-svgrepo-com.svg" alt="Facebook icon">
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <img src="twitter-color-svgrepo-com.svg" alt="Twitter icon">
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <img src="instagram-1-svgrepo-com.svg" alt="Instagram icon">
+          </a>
+        </div>
+      </div>
+
+      <div class = "box3">
+        <h3>Adress: Van Schaikweg 94, 7811KL Emmen</h3>
+        <h4>Working hours:</h4>
+        <ul>
+          <li>Mon - Close</li>
+          <li>Tues - 09:00 - 17:00</li>
+          <li>Wed - 09:00 - 17:00</li>
+          <li>Thurs - 09:00 - 17:00</li>
+          <li>Fri - 09:00 - 17:00</li>
+          <li>Sat - 09:00 - 17:00</li>
+          <li>Sun - 09:00 - 17:00</li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>    
 </body>
 </html>
