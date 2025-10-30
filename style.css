@@ -6,10 +6,8 @@
     font-style: normal;
 }
 
-body
+.contact-body
 {
-    display: flex;
-    justify-content: center;
     background-color: #00657C;
     font-family: 'CirularStd-medium', sans-serif;
     color: white;
@@ -20,6 +18,9 @@ body
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 20px auto;
 }
 
 .info-left
@@ -42,22 +43,22 @@ body
     padding: 10px;
 }
 
-a:link
+.link a:link
 {
     color: white;
     text-decoration: none;
 }
-a:visited
+.link a:visited
 {
     color: gray;
     text-decoration: none;
 }
-a:hover
+.link a:hover
 {
     color: #95261F;
     text-decoration: underline;
 }
-a:active
+.link a:active
 {
     text-decoration: underline;
 }
