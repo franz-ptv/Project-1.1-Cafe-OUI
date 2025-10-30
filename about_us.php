@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="stylesheet.css">
     <title>About Us</title>
 </head>
-<body>
-        <nav class = "navbar">
+<body class="body_impression">
+    
+<nav class = "navbar">
     <ul class="navbarul">
 
       <div class="navlogo">
@@ -29,7 +30,7 @@
       </div>
 
     </ul>
-  </nav>
+</nav>
 
     <section class="aboutus"
              style="background: linear-gradient(rgba(186, 211, 238,0.6), rgba(186, 211, 238,0.6)),
@@ -86,13 +87,13 @@
         <a href="index.php" class = "logo_footer">OUI</a>
         <div class = "social_icons">
           <a href="https://facebook.com" target="_blank">
-            <img src="facebook-svgrepo-com.svg" alt="Facebook icon">
+            <img src="images/home-page/facebook-svgrepo-com.svg" alt="Facebook icon">
           </a>
           <a href="https://twitter.com" target="_blank">
-            <img src="twitter-color-svgrepo-com.svg" alt="Twitter icon">
+            <img src="images/home-page/twitter-color-svgrepo-com.svg" alt="Twitter icon">
           </a>
           <a href="https://instagram.com" target="_blank">
-            <img src="instagram-1-svgrepo-com.svg" alt="Instagram icon">
+            <img src="images/home-page/instagram-1-svgrepo-com.svg" alt="Instagram icon">
           </a>
         </div>
       </div>
