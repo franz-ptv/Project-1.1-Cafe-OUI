@@ -13,7 +13,7 @@
   <div class="top-left">
     
     <div class="tea-section">
-      <img src="image/maria.jpg" alt="Green Tea" class="menu-img">
+      <img src="images/menu/tea.png" alt="Green Tea" class="menu-img">
       <span class="side-text">Green tea</span>
       <h1>Tea</h1>
       <ul>
@@ -52,11 +52,11 @@
   <!-- Right-side images -->
   <div class="right-section">
     <div class="drink-item">
-      <img src="image/lime.jpg" alt="Homemade Lemonade" class="menu-img">
+      <img src="images/menu/lemonade.png" alt="Homemade Lemonade" class="menu-img">
       <span class="side-text-vertical">Home-made lemonade</span>
     </div>
     <div class="drink-item bottom">
-      <img src="image/chevanon(1)(1).jpg" alt="Cappuccino" class="menu-img">
+      <img src="images/menu/cappuccino.png" alt="Cappuccino" class="menu-img">
       <span class="side-text-vertical">Cappuccino</span>
     </div>
   </div>
@@ -73,7 +73,7 @@
 
  <div class="menu-wrapper">
   <div class="image-container top">
-    <img src="image/christina.jpg" alt="Plain Croissant">
+    <img src="images/menu/croissant.png" alt="Plain Croissant">
     <span class="side-text left-text">Plain Croissant</span>
   </div>
 
@@ -112,13 +112,13 @@
         <li>Paris-Brest</li>
         <li>Cream puffs</li>
         <li>Eclair</li>
-        <li>Milfeuille</li>
+        <li>Millefeuille</li>
       </ul>
     </div>
   </div>
 
   <div class="image-container bottom">
-    <img src="image/cake.jpg" alt="Macarons Vanilla Strawberry">
+    <img src="images/menu/merengue.png" alt="Macarons Vanilla Strawberry">
     <span class="side-text left-text">Macarons (Vanilla, Strawberry)</span>
   </div>
 
