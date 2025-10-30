@@ -20,7 +20,7 @@
       <div>
         <li><a href="index.php">Home</a></li>
         <li><a href="menu.php">Menu</a></li>
-        <li><a href="aboutus.php">About Us</a></li>
+        <li><a href="about_us.php">About Us</a></li>
         <li><a href="impression.php">Impression</a></li>
         <li><a href="contact.php">Contact us</a></li>
       </div>
