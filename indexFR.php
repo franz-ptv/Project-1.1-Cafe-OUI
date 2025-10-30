@@ -19,7 +19,7 @@
       </div>
 
       <div>
-        <li><a href="index.php">Home</a></li>
+        <li><a href="index.php">Accueil</a></li>
         <li><a href="menu.php">Menu</a></li>
         <li><a href="about_us.php">À propos</a></li>
         <li><a href="impression.php">Impression</a></li>
@@ -72,7 +72,7 @@
 
       <div class = "box1">
         <div class = "footer_links_row">
-          <a href="index.php">Home</a>
+          <a href="index.php">Accueil</a>
           <a href="about_us.php">À propos</a>
           <a href="contact.php">Contact</a>
         </div>
