@@ -20,7 +20,7 @@
       <div>
         <li><a href="index.php">Home</a></li>
         <li><a href="menu.php">Menu</a></li>
-        <li><a href="aboutus.php">About Us</a></li>
+        <li><a href="about_us.php">About Us</a></li>
         <li><a href="impression.php">Impression</a></li>
         <li><a href="contact.php">Contact us</a></li>
       </div>
@@ -72,12 +72,12 @@
       <div class = "box1">
         <div class = "footer_links_row">
           <a href="index.php">Home</a>
-          <a href="index.php">About us</a>
-          <a href="index.php">Contact us</a>
+          <a href="about_us.php">About us</a>
+          <a href="contact.php">Contact us</a>
         </div>
         <div class = "footer_links_row">
-          <a href="index.php">Menu</a>
-          <a href="index.php">Impression</a>
+          <a href="menu.php">Menu</a>
+          <a href="impression.php">Impression</a>
         </div>
       </div>
 
