@@ -62,7 +62,7 @@
   <div class = "textbox">
     <div class="line_beige"></div>
     <div class="line_beige"></div>
-    <a href="exhibition.php"><p class="link_exh">Click here to check our exhibition!</p></a>
+    <a href="impression.php"><p class="link_exh">Click here to check our exhibition!</p></a>
     <p class="pared">A little bit of our French culture in your favourite cafe!</p>
   </div>
 
