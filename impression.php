@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="impression_style.css">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="images/navigation-bar/fav.png">
     <title>Impression</title>
 </head>
 <body class="body_impression">

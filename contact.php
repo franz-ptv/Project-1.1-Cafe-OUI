@@ -36,6 +36,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         <title>Contact</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="stylesheet.css">
+        <link rel="icon" type="image/x-icon" href="images/navigation-bar/fav.png">
     </head>
     <body class="contact-body">
         <nav class = "navbar">
@@ -108,7 +109,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
                 ?>
             </div>
         </div>
-        
+
         <footer>
             <div class = "footer_container">
 
