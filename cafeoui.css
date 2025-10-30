@@ -131,7 +131,7 @@ ul {
   grid-template-columns: 1fr 2fr;
   gap: 2rem;
   align-items: start;
-  background-image: url("images/menu/croissant.png");
+  background-image: url("images/menu/menu_bottom_side.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
