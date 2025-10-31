@@ -47,9 +47,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
  <div class="navlinks">
     <a href="index.php">Home</a>
     <a href="menu.php">Menu</a>
-    <a href="about_us.php">About Us</a>
-    <a href="impression.php">Impression</a>
-    <a href="contact.php">Contact us</a>
+    <a href="about_us.php">Over ons</a>
+    <a href="impression.php">Impresse</a>
+    <a href="contact.php">Contact</a>
  </div>
  <div class="navactions">
     <button>Language</button>

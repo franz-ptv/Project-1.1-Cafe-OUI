@@ -39,6 +39,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         <link rel="icon" type="image/x-icon" href="images/navigation-bar/fav.png">
     </head>
     <body class="contact-body">
+        
 <nav class="navbar">
  <div class="navlogo">
     <a class="logo" href="index.php">OUI</a>
@@ -46,9 +47,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
  <div class="navlinks">
     <a href="index.php">Home</a>
     <a href="menu.php">Menu</a>
-    <a href="about_us.php">About Us</a>
+    <a href="about_us.php">À propos</a>
     <a href="impression.php">Impression</a>
-    <a href="contact.php">Contact us</a>
+    <a href="contact.php">Contact</a>
  </div>
  <div class="navactions">
     <button>Language</button>
