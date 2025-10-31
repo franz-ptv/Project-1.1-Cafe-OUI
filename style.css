@@ -43,6 +43,15 @@
     padding: 10px;
 }
 
+.form-error
+{
+    color: #95261F;
+}
+.form-success
+{
+    color: greenyellow;
+}
+
 .link a:link
 {
     color: white;
