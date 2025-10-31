@@ -79,14 +79,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
                 <div class="link">
                     <p>
                         <a href="mailto:emmen@oui-cafe.fr">
-                            <img src="assets/images/contact-us/mail.svg" alt="Mail icon" class="icon">
+                            <img src="assets/images/contact-us/white_mail.png" alt="Mail icon" class="icon">
                             emmen@oui-cafe.fr
                         </a>
                         </p>
 
                         <p>
                         <a href="tel:+31631782094">
-                            <img src="assets/images/contact-us/phone.svg" alt="Phone icon" class="icon">
+                            <img src="assets/images/contact-us/white_phone.png" alt="Phone icon" class="icon">
                             +31 6 31782094
                         </a>
                     </p>
