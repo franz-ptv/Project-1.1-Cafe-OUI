@@ -10,27 +10,21 @@
 </head>
 <body class="body_impression">
     
-<nav class = "navbar">
-    <ul class="navbarul">
-
-      <div class="navlogo">
-       <a class = "logo" href="index.php">OUI</a>
-      </div>
-
-      <div>
-        <li><a href="indexNL.php">Home</a></li>
-        <li><a href="menuNL.php">Menu</a></li>
-        <li><a href="about_usNL.php">Over ons</a></li>
-        <li><a href="impressionNL.php">Impressie</a></li>
-        <li><a href="contactNL.php">Contact</a></li>
-      </div>
-
-      <div>
-        <button>Language</button>
-        <button>Dark/Light</button>
-      </div>
-
-    </ul>
+<nav class="navbar">
+ <div class="navlogo">
+    <a class="logo" href="index.php">OUI</a>
+ </div>
+ <div class="navlinks">
+    <a href="index.php">Home</a>
+    <a href="menu.php">Menu</a>
+    <a href="about_us.php">Over ons</a>
+    <a href="impression.php">Impresse</a>
+    <a href="contact.php">Contact</a>
+ </div>
+ <div class="navactions">
+    <button>Language</button>
+    <button>Dark/Light</button>
+ </div>
 </nav>
 
     <section class="aboutus">
@@ -73,23 +67,24 @@ Hier, in dit Franse café, is het museum geen gebouw om te bezoeken – het is h
         Neem ook een kijkje bij onze laatste tentoonstelling 
     </a>
     </section>
+
   <footer>
     <div class = "footer_container">
 
       <div class = "box1">
         <div class = "footer_links_row">
           <a href="indexNL.php">Home</a>
-          <a href="about_usNL.php">About us</a>
-          <a href="contactNL.php">Contact us</a>
+          <a href="about_usNL.php">Over ons</a>
+          <a href="contactNL.php">Contact</a>
         </div>
         <div class = "footer_links_row">
           <a href="menuNL.php">Menu</a>
-          <a href="impressionNL.php">impressie</a>
+          <a href="impressionNL.php">Impressie</a>
         </div>
       </div>
 
       <div class = "box2">
-        <a href="index.php" class = "logo_footer">OUI</a>
+        <a href="indexNL.php" class = "logo_footer">OUI</a>
         <div class = "social_icons">
           <a href="https://facebook.com" target="_blank">
             <img src="assets/images/home-page/facebook-svgrepo-com.svg" alt="Facebook icon">
@@ -118,6 +113,6 @@ Hier, in dit Franse café, is het museum geen gebouw om te bezoeken – het is h
       </div>
 
     </div>
-  </footer>    
+  </footer>  
 </body>
 </html>

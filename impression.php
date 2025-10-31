@@ -10,27 +10,21 @@
 </head>
 <body class="body_impression">
 
-<nav class = "navbar">
-    <ul class="navbarul">
-
-      <div class="navlogo">
-       <a class = "logo" href="index.php">OUI</a>
-      </div>
-
-      <div>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="menu.php">Menu</a></li>
-        <li><a href="about_us.php">About Us</a></li>
-        <li><a href="impression.php">Impression</a></li>
-        <li><a href="contact.php">Contact us</a></li>
-      </div>
-
-      <div>
-        <button>Language</button>
-        <button>Dark/Light</button>
-      </div>
-
-    </ul>
+<nav class="navbar">
+ <div class="navlogo">
+    <a class="logo" href="index.php">OUI</a>
+ </div>
+ <div class="navlinks">
+    <a href="index.php">Home</a>
+    <a href="menu.php">Menu</a>
+    <a href="about_us.php">About Us</a>
+    <a href="impression.php">Impression</a>
+    <a href="contact.php">Contact us</a>
+ </div>
+ <div class="navactions">
+    <button>Language</button>
+    <button>Dark/Light</button>
+ </div>
 </nav>
 
     <section class="exhibition">
@@ -90,18 +84,19 @@
             <img class="img-merengue" src="assets/images/impression/small_merengue.png" alt="merengue">
         </div>
     </section>
+
   <footer>
     <div class = "footer_container">
 
       <div class = "box1">
         <div class = "footer_links_row">
           <a href="index.php">Home</a>
-          <a href="index.php">About us</a>
-          <a href="index.php">Contact us</a>
+          <a href="about_us.php">About us</a>
+          <a href="contact.php">Contact us</a>
         </div>
         <div class = "footer_links_row">
-          <a href="index.php">Menu</a>
-          <a href="index.php">Impression</a>
+          <a href="menu.php">Menu</a>
+          <a href="impression.php">Impression</a>
         </div>
       </div>
 
