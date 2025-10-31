@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="impression_style.css">
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="icon" type="image/x-icon" href="images/navigation-bar/fav.png">
+    <link rel="icon" type="image/x-icon" href="assets/images/navigation-bar/fav.png">
     <title>Impressie</title>
 </head>
 <body class="body_impression">
@@ -42,22 +42,22 @@
 
         <div class="exhibition-gallery">
             <div class="artwork">
-                <img src="images/impression/jeune_fille_au_ruban_rouge.png" alt="Jeune Fille au Ruban Rouge">
+                <img src="assets/images/impression/jeune_fille_au_ruban_rouge.png" alt="Jeune Fille au Ruban Rouge">
                 <h4>Éloise Marchand (1768-1729)</h4>
                 <p>1796</p>
             </div>
             <div class="artwork">
-                <img src="images/impression/la_serenite_dautomne.png" alt="La Sérénité d'Automne">
+                <img src="assets/images/impression/la_serenite_dautomne.png" alt="La Sérénité d'Automne">
                 <h4>Henri Delacroix (1779-1847)</h4>
                 <p>1812</p>
             </div>
             <div class="artwork">
-                <img src="images/impression/la_demenite_dautomne.png" alt="La Démenité d'Automne">
+                <img src="assets/images/impression/la_demenite_dautomne.png" alt="La Démenité d'Automne">
                 <h4>Marguerite Lefèvre (1725-1791)</h4>
                 <p>1758</p>
             </div>
             <div class="artwork">
-                <img src="images/impression/la_legende.png" alt="La Légende">
+                <img src="assets/images/impression/la_legende.png" alt="La Légende">
                 <h4>Alexandre Vautrin (1742-1805)</h4>
                 <p>1784</p>
             </div>
@@ -86,8 +86,8 @@
                     loading="lazy"></iframe>
             </div>
             
-            <img class="img-cappuccino" src="images/impression/small_cappuccino.png" alt="cappuccino">
-            <img class="img-merengue" src="images/impression/small_merengue.png" alt="merengue">
+            <img class="img-cappuccino" src="assets/images/impression/small_cappuccino.png" alt="cappuccino">
+            <img class="img-merengue" src="assets/images/impression/small_merengue.png" alt="merengue">
         </div>
     </section>
   <footer>
@@ -109,13 +109,13 @@
         <a href="index.php" class = "logo_footer">OUI</a>
         <div class = "social_icons">
           <a href="https://facebook.com" target="_blank">
-            <img src="images/home-page/facebook-svgrepo-com.svg" alt="Facebook icon">
+            <img src="assets/images/home-page/facebook-svgrepo-com.svg" alt="Facebook icon">
           </a>
           <a href="https://twitter.com" target="_blank">
-            <img src="images/home-page/twitter-color-svgrepo-com.svg" alt="Twitter icon">
+            <img src="assets/images/home-page/twitter-color-svgrepo-com.svg" alt="Twitter icon">
           </a>
           <a href="https://instagram.com" target="_blank">
-            <img src="images/home-page/instagram-1-svgrepo-com.svg" alt="Instagram icon">
+            <img src="assets/images/home-page/instagram-1-svgrepo-com.svg" alt="Instagram icon">
           </a>
         </div>
       </div>

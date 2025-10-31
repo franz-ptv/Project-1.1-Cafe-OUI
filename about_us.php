@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="impression_style.css">
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="icon" type="image/x-icon" href="images/navigation-bar/fav.png">
+    <link rel="icon" type="image/x-icon" href="assets/images/navigation-bar/fav.png">
     <title>About Us</title>
 </head>
 <body class="body_impression">
@@ -35,7 +35,7 @@
 
     <section class="aboutus">
     <div class="about_image">
-        <img src="images/about-us/about_us_cappuccino.png" alt="about_us_cappuccino" style="width: 100%;">
+        <img src="assets/images/about-us/about_us_cappuccino.png" alt="about_us_cappuccino" style="width: 100%;">
         <div class="centered">About us</div>
     </div>
     <div class="oui_about">
@@ -52,7 +52,7 @@
     <div class="lineabout2"></div>
     <div class="lineabout3"></div>
     <div class="inspiration_image">
-        <img src="images/about-us/about_us_tea.png" alt="about_us_tea" style="width: 100%;">
+        <img src="assets/images/about-us/about_us_tea.png" alt="about_us_tea" style="width: 100%;">
         <div class="centered">Our inspiration</div>
     </div>
     <div class="oui_inspiration">
@@ -83,13 +83,13 @@
         <a href="index.php" class = "logo_footer">OUI</a>
         <div class = "social_icons">
           <a href="https://facebook.com" target="_blank">
-            <img src="images/home-page/facebook-svgrepo-com.svg" alt="Facebook icon">
+            <img src="assets/images/home-page/facebook-svgrepo-com.svg" alt="Facebook icon">
           </a>
           <a href="https://twitter.com" target="_blank">
-            <img src="images/home-page/twitter-color-svgrepo-com.svg" alt="Twitter icon">
+            <img src="assets/images/home-page/twitter-color-svgrepo-com.svg" alt="Twitter icon">
           </a>
           <a href="https://instagram.com" target="_blank">
-            <img src="images/home-page/instagram-1-svgrepo-com.svg" alt="Instagram icon">
+            <img src="assets/images/home-page/instagram-1-svgrepo-com.svg" alt="Instagram icon">
           </a>
         </div>
       </div>
