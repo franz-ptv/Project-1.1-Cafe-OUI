@@ -40,28 +40,22 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     </head>
     <body class="contact-body">
         
-        <nav class = "navbar">
-            <ul class="navbarul">
-
-            <div class="navlogo">
-            <a class = "logo" href="index.php">OUI</a>
-            </div>
-
-            <div>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="menu.php">Menu</a></li>
-                <li><a href="about_us.php">About Us</a></li>
-                <li><a href="impression.php">Impression</a></li>
-                <li><a href="contact.php">Contact us</a></li>
-            </div>
-
-            <div>
-                <button>Language</button>
-                <button>Dark/Light</button>
-            </div>
-
-            </ul>
-        </nav>
+<nav class="navbar">
+ <div class="navlogo">
+    <a class="logo" href="index.php">OUI</a>
+ </div>
+ <div class="navlinks">
+    <a href="index.php">Home</a>
+    <a href="menu.php">Menu</a>
+    <a href="about_us.php">About Us</a>
+    <a href="impression.php">Impression</a>
+    <a href="contact.php">Contact us</a>
+ </div>
+ <div class="navactions">
+    <button>Language</button>
+    <button>Dark/Light</button>
+ </div>
+</nav>
 
         <div class="main">
             <div class="info-left">
@@ -149,13 +143,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
                 <a href="index.php" class = "logo_footer">OUI</a>
                 <div class = "social_icons">
                 <a href="https://facebook.com" target="_blank">
-                    <img src="images/home-page/facebook-svgrepo-com.svg" alt="Facebook icon">
+                    <img src="assets/images/home-page/facebook-svgrepo-com.svg" alt="Facebook icon">
                 </a>
                 <a href="https://twitter.com" target="_blank">
-                    <img src="images/home-page/twitter-color-svgrepo-com.svg" alt="Twitter icon">
+                    <img src="assets/images/home-page/twitter-color-svgrepo-com.svg" alt="Twitter icon">
                 </a>
                 <a href="https://instagram.com" target="_blank">
-                    <img src="images/home-page/instagram-1-svgrepo-com.svg" alt="Instagram icon">
+                    <img src="assets/images/home-page/instagram-1-svgrepo-com.svg" alt="Instagram icon">
                 </a>
                 </div>
             </div>
