@@ -4,9 +4,8 @@ body{
     flex-direction: column;
 }
 
+/* Here starts the NavBar*/
 
-/* Here starts the navbar css
-*/
 .navbar {
      display: flex;
     justify-content: space-between;
@@ -112,7 +111,7 @@ body{
 .firstimg{
     /*width: 100vw;*/
     height: 100vh;
-    background-image: url("CafeBlue2.png");
+    background-image: url("../assets/images/home-page/CafeBlue.png");
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center;
@@ -122,7 +121,7 @@ body{
 
 .FirstText{
     display: inline-block;
-    color:#443b12;
+    color: rgb(237, 229, 187);
     font-size: 15em;
     font-family:'Caveat';
     position:relative;
@@ -133,7 +132,7 @@ body{
 .SecondText{
     font-size: 3em;
     font-family: 'Caveat';
-    color: #443b12;
+    color: rgb(237, 229, 187);
     position: absolute;
     align-items: center;
     align-self: center;
@@ -144,7 +143,7 @@ body{
 margin-top: 4px;
 width: 100vw;
 height: 2px;
-background-color:rgb(133, 233, 255);
+background-color: rgb(21, 100, 123);
 position: absolute;
 }
 
@@ -152,43 +151,50 @@ position: absolute;
 margin-top: 4px;
 width: 100vw;
 height: 2px;
-background-color: #443b12;
+background-color: rgb(237, 229, 187);
 }
 
 /*
 Here starts the second part (beige part)
 */
 .cest{
-    font-size: 300%;
-    color: #443b12;
+    font-size: 3em;
+    color: rgb(21, 100, 123);
 }
 
 .menu_button{
+    display: inline-block;
     width: 300px;
     height: 80px;
+    line-height: 80px;
     font-size: 200%;
-    background-color: #85e9ff;
-    color: #443b12;
+    background-color: rgb(21, 100, 123);
+    color: white;
     border-radius: 25px;
     text-decoration: underline;
-    border: 0cap;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
     transition: all 0.5s;
 }
 
 .menu_button:hover{
-    background-color: rgb(133, 233, 255, 0.85);
-    width: 310px;
+    background-color: rgba(21, 99, 123, 0.85);
+    width: 290px;
+    height: 75px;
+    border-radius: 35px;
 }
 
 .delicious{
-    font-size: 250%;
-    color: #443b12;
+    font-size: 2.5em;
+    color: rgb(21, 100, 123);
 }
 
 .secondimg {
     width: 100%;
     height: 100vh;
-    background-image: url("InteriorBeige2.png");
+    background-image: url("../assets/images/home-page/InteiorBeige.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -218,7 +224,12 @@ Here starts the second part (beige part)
     justify-self: end;
     align-self: start;
     width: 100%;
-
+    border-radius: 50%;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.croissant_pic:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgb(0, 0, 0, 0.2);
 }
 
 .treat_pic {
@@ -227,6 +238,12 @@ Here starts the second part (beige part)
     justify-self: start;
     align-self: start;
     width: 95%;
+    border-radius: 50%;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.treat_pic:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgb(0, 0, 0, 0.2);
 }
 
 .croissant_png {
@@ -236,6 +253,10 @@ Here starts the second part (beige part)
     align-self: center;
     width: 90%;
     max-width: 180px;
+    transition: transform 0.4s ease;
+}
+.croissant_png:hover{
+    transform: scale(1.15);
 }
 
 .treat_png {
@@ -245,6 +266,10 @@ Here starts the second part (beige part)
     align-self: center;
     width: 90%;
     max-width: 180px;
+    transition: transform 0.4s ease;
+}
+.treat_png:hover{
+    transform: scale(1.15);
 }
 
 .tea_png {
@@ -254,6 +279,10 @@ Here starts the second part (beige part)
     align-self: start;
     width: 70%;
     max-width: 130px;
+    transition: transform 0.4s ease;
+}
+.tea_png:hover{
+    transform: scale(1.15);
 }
 
 .coffee_png {
@@ -263,13 +292,17 @@ Here starts the second part (beige part)
     align-self: end;
     width: 70%;
     max-width: 130px;
+    transition: transform 0.4s ease;
+}
+.coffee_png:hover{
+    transform: scale(1.15);
 }
 
 /* RESPONSIVE: Responsive grid adjustments */
 @media (max-width: 1300px){
         .FirstText{
         display: inline-block;
-        color: #443b12;
+        color: rgb(237, 229, 187);
         font-size: 13em;
         font-family:'Caveat';
         position:relative;
@@ -280,7 +313,7 @@ Here starts the second part (beige part)
 @media (max-width: 900px) { /* NOT READY NEED NAVBAR*/
     .FirstText{
         display: inline-block;
-        color:#443b12;
+        color: rgb(237, 229, 187);
         font-size: 10em;
         font-family:'Caveat';
         position:relative;
@@ -349,7 +382,7 @@ Here starts the second part (beige part)
 
     .FirstText{
         display: inline-block;
-        color:#443b12;
+        color: rgb(237, 229, 187);
         font-size: 9em;
         font-family:'Caveat';
         position:relative;
@@ -359,7 +392,7 @@ Here starts the second part (beige part)
     .SecondText{
         font-size: 200%;
         font-family: 'Caveat';
-        color: #443b12;
+        color: rgb(237, 229, 187);
         position: absolute;
         align-items: center;
         align-self: center;
@@ -372,7 +405,7 @@ Here starts the second part (beige part)
 @media (max-width: 600px) { /* READY*/
     .FirstText{
         display: inline-block;
-        color:#443b12;
+        color: rgb(237, 229, 187);
         font-size: 5em;
         font-family:'Caveat';
         position:relative;
@@ -382,7 +415,7 @@ Here starts the second part (beige part)
     .SecondText{
         font-size: 150%;
         font-family: 'Caveat';
-        color: #443b12;
+        color: rgb(237, 229, 187);
         position: absolute;
         align-items: center;
         align-self: center;
@@ -506,33 +539,33 @@ Here starts the second part (beige part)
         grid-column: 12/42;
         grid-row: 14/18;
         font-size: 200%;
-        color: #85e9ff;
+        color: rgb(21, 100, 123);
     }
     .menu_button{
         width: 150px;
         height: 65px;
         font-size: 120%;
-        background-color: #85e9ff;
-        color:#443b12;
+        background-color: rgb(21, 100, 123);
+        color: white;
         border-radius: 25px;
         text-decoration: underline;
         border: 0cap;
         transition: all 0.5s;
     }
     .menu_button:hover{
-        background-color: rgb(133, 233, 255, 0.85);
+        background-color: rgba(21, 99, 123, 0.85);
         width: 310px;
     }
     .delicious{
         font-size: 150%;
-        color: #85e9ff;
+        color: rgb(21, 100, 123);
     }
 }
 @media (max-width: 360px){ /* READY*/
     .SecondText{
         font-size: 120%;
         font-family: 'Caveat';
-        color: #443b12;
+        color: rgb(237, 229, 187);
         position: absolute;
         align-items: center;
         align-self: center;
@@ -550,7 +583,7 @@ Here starts the third part (red part)
     padding: 0%;
     /*width: 100vw;*/
     height: 200px;
-    background-color:#e1736b;
+    background-color: rgb(149, 38, 31);
 }
 
 .link_exh{
@@ -558,8 +591,8 @@ display:flex ;
 justify-content: center;
 align-items:center ;
 padding-top: 10px;
-font-size: 200%;
-color:  #443b12;
+font-size: 2em;
+color: white;
 text-decoration: underline;
 }
 
@@ -567,8 +600,8 @@ text-decoration: underline;
 display:flex ;
 justify-content: center;
 align-items:center ;
-font-size: 200%;
-color: #443b12;
+font-size: 2em;
+color: white;
 }
 
 /* Here starts the footer part
@@ -581,7 +614,7 @@ color: #443b12;
 .footer_container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: #85e9ff;
+    background-color: rgba(21, 99, 123);
     width: auto;
     height: 250px;
 }
@@ -589,7 +622,7 @@ color: #443b12;
 /* This is the first part of the footer*/
 
 .box1{
-    background-color: #85e9ff;
+    background-color: rgb(21, 100, 123);
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -605,18 +638,38 @@ color: #443b12;
     gap: 32px;
 }
 .box1 a {
-  color:#443b12;
-  transition: color 0.3s;
+  color: #fff;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  position: relative;
+  color: #ffffff;
 }
 .box1 a:hover{
-    color:#887524;
-    /* background-color: rgb(18, 82, 102); */
+    color:  rgb(237, 229, 187);
+}
+
+.box1 a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1.5px;
+    width: 0;
+    background-color: #fff;
+    text-align: right;
+    opacity: 0;
+    transition: width 0.7s ease, opacity 0.5s ease;
+}
+
+.box1 a:hover::after{
+    width: 100%;
+    opacity: 1;
 }
 
 /*This is the second part of the footer*/
 
 .box2{
-    background-color: #85e9ff;
+    background-color: rgb(21, 100, 123);
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -627,14 +680,14 @@ color: #443b12;
 .logo_footer{
     font-size: 4.7rem;
     justify-self:center ;
-    color: #443b12;
+    color: rgb(237, 229, 187);
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 1px;
     transition: color 0.3s;
 }
 .logo_footer:hover{
-    color: #7e6e23;
+    color: rgb(173, 164, 119);
 }
 
 .social_icons{
@@ -660,7 +713,7 @@ color: #443b12;
 /* This is the third part of the footer*/
 
 .box3{
-    background-color: rgb(133, 233, 255);
+    background-color: rgb(21, 100, 123);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -671,13 +724,13 @@ color: #443b12;
     margin: 8px 0 0 0;
     font-weight: 500;
     font-size: 1.3rem;
-    color: #443b12;
+    color: #fff;
 }
 
 .box3 ul{
     list-style: none;
     margin: 10px 0 0 0;
-    color:#443b12;
+    color: #fff;
 }
 
 .box3 ul li{
