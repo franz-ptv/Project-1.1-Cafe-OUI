@@ -17,9 +17,9 @@
  <div class="navlinks">
     <a href="index.php">Home</a>
     <a href="menu.php">Menu</a>
-    <a href="about_us.php">About Us</a>
-    <a href="impression.php">Impression</a>
-    <a href="contact.php">Contact us</a>
+    <a href="about_us.php">Over ons</a>
+    <a href="impression.php">Impresse</a>
+    <a href="contact.php">Contact</a>
  </div>
  <div class="navactions">
     <button>Language</button>
@@ -84,23 +84,24 @@
             <img class="img-merengue" src="assets/images/impression/small_merengue.png" alt="merengue">
         </div>
     </section>
+
   <footer>
     <div class = "footer_container">
 
       <div class = "box1">
         <div class = "footer_links_row">
           <a href="indexNL.php">Home</a>
-          <a href="about_usNL.php">About us</a>
-          <a href="contactNL.php">Contact us</a>
+          <a href="about_usNL.php">Over ons</a>
+          <a href="contactNL.php">Contact</a>
         </div>
         <div class = "footer_links_row">
           <a href="menuNL.php">Menu</a>
-          <a href="impressionNL.php">impressie</a>
+          <a href="impressionNL.php">Impressie</a>
         </div>
       </div>
 
       <div class = "box2">
-        <a href="index.php" class = "logo_footer">OUI</a>
+        <a href="indexNL.php" class = "logo_footer">OUI</a>
         <div class = "social_icons">
           <a href="https://facebook.com" target="_blank">
             <img src="assets/images/home-page/facebook-svgrepo-com.svg" alt="Facebook icon">
@@ -129,7 +130,6 @@
       </div>
 
     </div>
-  </footer>
-
+  </footer>  
 </body>
 </html>
