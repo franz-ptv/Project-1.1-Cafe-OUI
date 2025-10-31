@@ -33,10 +33,7 @@
     </ul>
 </nav>
 
-    <section class="aboutus"
-             style="background: linear-gradient(rgba(186, 211, 238,0.6), rgba(186, 211, 238,0.6)),
-             url('images/about-us/about_us_top.png') center/cover no-repeat;">
-
+    <section class="aboutus">
     <div class="about_image">
         <img src="images/about-us/about_us_cappuccino.png" alt="about_us_cappuccino" style="width: 100%;">
         <div class="centered">About us</div>
@@ -50,9 +47,7 @@
         Café Oui – Say yes to coffee, say yes to life.</div>
     </section>
 
-    <section class="inspiration"
-        style="background: linear-gradient(rgba(186, 211, 238,0.6), rgba(186, 211, 238,0.6)),
-        url('images/about-us/about_us_bottom.png') center/cover no-repeat;">
+    <section class="inspiration">
     <div class="lineabout1"></div>
     <div class="lineabout2"></div>
     <div class="lineabout3"></div>

@@ -50,6 +50,8 @@ section
     align-items: center;
     min-height: 700px;
     font-family: 'CirularStd-medium', sans-serif;
+    background: linear-gradient(rgba(149,38,31,0.6), rgba(149,38,31,0.6)),
+    url('images/impression/exhibition.png') center/cover no-repeat;
 }
 
 .exhibition-header h3
@@ -121,6 +123,8 @@ Impression part */
     position: relative;
     text-align: center;
     max-height: 1000px;
+    background: linear-gradient(rgba(149,38,31,0.6), rgba(149,38,31,0.6)),
+    url('images/impression/impression.png') center/cover no-repeat;
 }
 
 .impression-header 
@@ -215,6 +219,8 @@ Impression part */
 
 .aboutus
 {
+    background: linear-gradient(rgba(186, 211, 238,0.6), rgba(186, 211, 238,0.6)),
+    url('images/about-us/about_us_top.png') center/cover no-repeat;
     max-height: 1200px;
     position: relative;
 }
@@ -266,6 +272,8 @@ Impression part */
 
 .inspiration 
 {
+    background: linear-gradient(rgba(186, 211, 238,0.6), rgba(186, 211, 238,0.6)),
+    url('images/about-us/about_us_bottom.png') center/cover no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;

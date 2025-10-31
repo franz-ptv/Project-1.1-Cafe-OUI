@@ -33,9 +33,7 @@
     </ul>
 </nav>
 
-    <section class="exhibition"
-     style="background: linear-gradient(rgba(149,38,31,0.6), rgba(149,38,31,0.6)),
-         url('images/impression/exhibition.png') center/cover no-repeat;">
+    <section class="exhibition">
 
         <div class="exhibition-header">
             <h3>Regardez d’abord notre dernière</h3>
@@ -69,9 +67,7 @@
     <div class="border3"></div>
     </section>
 
-    <section class="impression_part"
-    style= "background: linear-gradient(rgba(149,38,31,0.6), rgba(149,38,31,0.6)),
-    url('images/impression/impression.png') center/cover no-repeat;">
+    <section class="impression_part">
         <div class="impression-header">
             <div class="border4"></div>
             <h1>Nous faisons toujours de notre mieux pour laisser une bonne impression!</h1>
