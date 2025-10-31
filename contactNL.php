@@ -1,6 +1,6 @@
 <?php
 $errors = [];
-
+// to add the errors
 if($_SERVER["REQUEST_METHOD"] == "POST")
 {
     $name = filter_input(INPUT_POST, "name");
@@ -100,11 +100,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
                 </form>
 
                 <?php
+                // to display the errors
                 if($_SERVER["REQUEST_METHOD"] == "POST")
                 {
                     foreach($errors as $error)
                     {
-                        echo "<p>$error</p>";
+                        if($error === "Your message has been sent.") 
+                        {
+                            echo "<p class='form-success'>$error</p>";
+                        } 
+                        else 
+                        {
+                            echo "<p class='form-error'>$error</p>";
+                        }
                     }
                 }
                 ?>

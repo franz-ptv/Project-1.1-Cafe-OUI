@@ -8,7 +8,7 @@
 
 .contact-body
 {
-    background-color: #00657C;
+    background-color: #85e9ff;
     font-family: 'CircularStd-medium', sans-serif;
     color: white;
 }
@@ -25,8 +25,8 @@
 
 .info-left
 {
-    background-color: #BAD3EE;
-    border: 10px solid #EDE5BB;
+    background-color: #112a45;
+    border: 10px solid #e1736b;
     border-radius: 10px;
     padding: 10px;
 }
@@ -38,18 +38,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: lighten;
-    border: 10px solid #EDE5BB;
+    border: 10px solid #e1736b;
     border-radius: 10px;
     padding: 10px;
-}
-
-.form-error
-{
-    color: #95261F;
-}
-.form-success
-{
-    color: greenyellow;
 }
 
 .link a:link
@@ -64,7 +55,7 @@
 }
 .link a:hover
 {
-    color: #95261F;
+    color: #e1736b;
     text-decoration: underline;
 }
 .link a:active
@@ -82,7 +73,7 @@ input, textarea
 {
     margin: 15px 0;
     resize: none;
-    border: 5px solid #EDE5BB;
+    border: 5px solid #e1736b;
     border-radius: 10px;
 }
 
@@ -97,7 +88,7 @@ input::placeholder, textarea::placeholder
 .error
 {
     font-family: 'CircularStd-medium';
-    color: white;
+    color: #443b12;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,12 +99,11 @@ input::placeholder, textarea::placeholder
 .error h1
 {
     font-size: 75px;
-    font-family: 'CircularStd-medium';
 }
 
 .error a
 {
-    background-color: #95261F;
+    background-color: #e1736b;
     color: white;
     padding: 14px 25px;
     text-align: center;
@@ -123,11 +113,11 @@ input::placeholder, textarea::placeholder
 
 .main-error
 {
-    background-image: url("assets/photos/illustrations_red_croissant.png");
+    background-image: url("assets/photos/illustrations_yellow_croissant.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #00657C;
+    background-color: #85e9ff;
 }
 
 @media (max-width: 768px) 
