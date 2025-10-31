@@ -1,7 +1,7 @@
 @font-face 
 {
-    font-family: 'CirularStd-medium';
-    src: url('./assets/fonts/CirularStd-medium.otf')format('opentype');
+    font-family: 'CircularStd-medium';
+    src: url('./assets/fonts/CircularStd-medium.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -9,7 +9,7 @@
 .contact-body
 {
     background-color: #00657C;
-    font-family: 'CirularStd-medium', sans-serif;
+    font-family: 'CircularStd-medium', sans-serif;
     color: white;
 }
 
@@ -141,7 +141,7 @@ input::placeholder, textarea::placeholder
         height: 200px;
     }
 
-    ul 
+    .opening-hours ul 
     {
         display: flex;
         flex-direction: column;
@@ -149,7 +149,7 @@ input::placeholder, textarea::placeholder
         align-items: center;
     }
 
-    ul li 
+    .opening-hours ul li
     {
         margin: 5px 0;
     }
