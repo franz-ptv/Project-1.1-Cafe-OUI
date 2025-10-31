@@ -11,28 +11,22 @@
 
 <body>
 
-    <nav class = "navbar">
-    <ul class="navbarul">
-
-      <div class="navlogo">
-       <a class = "logo" href="indexFR.php">OUI</a>
-      </div>
-
-      <div>
-        <li><a href="indexFR.php">Accueil</a></li>
-        <li><a href="menuFR.php">Menu</a></li>
-        <li><a href="about_usFR.php">À propos</a></li>
-        <li><a href="impressionFR.php">Impression</a></li>
-        <li><a href="contactFR.php">Contact</a></li>
-      </div>
-
-      <div>
-        <button>Language</button>
-        <button>Dark/Light</button>
-      </div>
-
-    </ul>
-  </nav>
+<nav class="navbar">
+ <div class="navlogo">
+    <a class="logo" href="index.php">OUI</a>
+ </div>
+ <div class="navlinks">
+    <a href="index.php">Home</a>
+    <a href="menu.php">Menu</a>
+    <a href="about_us.php">À propos</a>
+    <a href="impression.php">Impression</a>
+    <a href="contact.php">Contact</a>
+ </div>
+ <div class="navactions">
+    <button>Language</button>
+    <button>Dark/Light</button>
+ </div>
+</nav>
 
   <div class = "firstimg">
       <div class = "FirstText">
@@ -49,15 +43,15 @@
     <div class="line_blue"></div>
       <div class = "mid_screen">
         <div><p class="cest">C'est delicieux!</p></div>
-          <a href="menuFR.php"><button class = "menu_button" >Découvrez notre menu</button></a>
+          <a href="menuFR.php" class = "menu_button" >Découvrez notre menu</a>
         <div><p class="delicious">Incroyablement bon!</p></div>
       </div>
-  <img src="images/home-page/croissant.png" class="croissant_pic" alt="">
-  <img src="images/home-page/treat.png" class="treat_pic" alt="">
-  <img src="images/home-page/i_croissant.png" class="croissant_png" alt="">
-  <img src="images/home-page/i_treat.png" class="treat_png" alt="">
-  <img src="images/home-page/i_tea.png" class="tea_png" alt="">
-  <img src="images/home-page/i_coffee.png" class="coffee_png" alt="">
+  <img src="assets/images/home-page/croissant.png" class="croissant_pic" alt="">
+  <img src="assets/images/home-page/treat.png" class="treat_pic" alt="">
+  <img src="assets/images/home-page/i_croissant.png" class="croissant_png" alt="">
+  <img src="assets/images/home-page/i_treat.png" class="treat_png" alt="">
+  <img src="assets/images/home-page/i_tea.png" class="tea_png" alt="">
+  <img src="assets/images/home-page/i_coffee.png" class="coffee_png" alt="">
   </div>
 
   <div class = "textbox">
@@ -86,13 +80,13 @@
         <a href="indexFR.php" class = "logo_footer">OUI</a>
         <div class = "social_icons">
           <a href="https://facebook.com" target="_blank">
-            <img src="images/home-page/facebook-svgrepo-com.svg" alt="Facebook icon">
+            <img src="assets/images/home-page/facebook-svgrepo-com.svg" alt="Facebook icon">
           </a>
           <a href="https://twitter.com" target="_blank">
-            <img src="images/home-page/twitter-color-svgrepo-com.svg" alt="Twitter icon">
+            <img src="assets/images/home-page/twitter-color-svgrepo-com.svg" alt="Twitter icon">
           </a>
           <a href="https://instagram.com" target="_blank">
-            <img src="images/home-page/instagram-1-svgrepo-com.svg" alt="Instagram icon">
+            <img src="assets/images/home-page/instagram-1-svgrepo-com.svg" alt="Instagram icon">
           </a>
         </div>
       </div>

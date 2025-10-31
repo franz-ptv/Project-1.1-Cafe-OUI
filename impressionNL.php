@@ -10,27 +10,21 @@
 </head>
 <body class="body_impression">
 
-<nav class = "navbar">
-    <ul class="navbarul">
-
-      <div class="navlogo">
-       <a class = "logo" href="index.php">OUI</a>
-      </div>
-
-      <div>
-        <li><a href="indexNL.php">Home</a></li>
-        <li><a href="menuNL.php">Menu</a></li>
-        <li><a href="about_usNL.php">Over ons</a></li>
-        <li><a href="impressionNL.php">Impressie</a></li>
-        <li><a href="contactNL.php">Contact</a></li>
-      </div>
-
-      <div>
-        <button>Language</button>
-        <button>Dark/Light</button>
-      </div>
-
-    </ul>
+<nav class="navbar">
+ <div class="navlogo">
+    <a class="logo" href="index.php">OUI</a>
+ </div>
+ <div class="navlinks">
+    <a href="index.php">Home</a>
+    <a href="menu.php">Menu</a>
+    <a href="about_us.php">About Us</a>
+    <a href="impression.php">Impression</a>
+    <a href="contact.php">Contact us</a>
+ </div>
+ <div class="navactions">
+    <button>Language</button>
+    <button>Dark/Light</button>
+ </div>
 </nav>
 
     <section class="exhibition">

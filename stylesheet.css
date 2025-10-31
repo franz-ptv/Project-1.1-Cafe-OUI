@@ -4,46 +4,104 @@ body{
     flex-direction: column;
 }
 
+/* Here starts the NavBar*/
 
-/* Here starts the navbar css
-*/
-.logo{
+.navbar {
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(21, 100, 123);
+    padding: 0 20px;
+    margin: 0;
+    font-size: 130%;
+    flex-wrap: wrap;
+}
+.navlogo {
+    align-self: flex-start;
+}
+.logo {
     font-size: 50px;
     font-weight: bold;
     color: rgb(237, 229, 187);
+    text-decoration: none;
 }
-
-.navlogo{
-align-self: left;
+.logo:hover{
+    background-color: rgb(16, 75, 93) ;
 }
-
-.navbarul{
-list-style-type: none;
-background-color:rgb(21, 100, 123);
-padding: 0%;
-margin: 0%;
-overflow: hidden;
-display: flex;
-justify-content:space-between;
-align-items: center;
-font-size: 130%;
+.navlinks {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
 }
-
-.navbar a{
+.navlinks a {
     color: rgb(237, 229, 187);
     text-decoration: none;
-    padding: 15px;
+    padding: 12px 15px;
     display: block;
     text-align: center;
+    border-radius: 4px;
+    white-space: nowrap;
 }
-
-.navbar a:hover{
+.navlinks a:hover {
     background-color: rgb(16, 75, 93);
 }
-
-.navbar li{
-    justify-content: center;
-    display: inline-block;
+.navactions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.navactions button {
+    padding: 8px 16px;
+    font-size: 95%;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+@media (max-width: 900px){
+    .navbar{
+        font-size: 115%;
+    }
+    .logo{
+        font-size: 40px;
+    }
+    .navlinks a{
+        padding: 10px 12px;
+    }
+    .navactions button{
+        padding: 7px 12px;
+    }
+}
+@media (max-width: 600px){
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 110%;
+  }
+  .navlogo {
+    align-self: center;
+    margin-bottom: 6px;
+  }
+  .navlinks {
+    flex-direction: column;
+    width: 100%;
+    gap: 6px;
+  }
+  .navlinks a {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .navactions {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+  }
+  .navactions button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+  }
 }
 
 
@@ -53,7 +111,7 @@ font-size: 130%;
 .firstimg{
     /*width: 100vw;*/
     height: 100vh;
-    background-image: url("images/home-page/CafeBlue.png");
+    background-image: url("assets/images/home-page/CafeBlue.png");
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center;
@@ -105,14 +163,19 @@ Here starts the second part (beige part)
 }
 
 .menu_button{
+    display: inline-block;
     width: 300px;
     height: 80px;
+    line-height: 80px;
     font-size: 200%;
     background-color: rgb(21, 100, 123);
     color: white;
     border-radius: 25px;
     text-decoration: underline;
-    border: 0cap;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
     transition: all 0.5s;
 }
 
@@ -129,7 +192,7 @@ Here starts the second part (beige part)
 .secondimg {
     width: 100%;
     height: 100vh;
-    background-image: url("images/home-page/InteiorBeige.png");
+    background-image: url("assets/images/home-page/InteiorBeige.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
