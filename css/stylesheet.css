@@ -158,7 +158,7 @@ background-color: rgb(237, 229, 187);
 Here starts the second part (beige part)
 */
 .cest{
-    font-size: 300%;
+    font-size: 3em;
     color: rgb(21, 100, 123);
 }
 
@@ -181,11 +181,13 @@ Here starts the second part (beige part)
 
 .menu_button:hover{
     background-color: rgba(21, 99, 123, 0.85);
-    width: 310px;
+    width: 290px;
+    height: 75px;
+    border-radius: 35px;
 }
 
 .delicious{
-    font-size: 250%;
+    font-size: 2.5em;
     color: rgb(21, 100, 123);
 }
 
@@ -222,7 +224,12 @@ Here starts the second part (beige part)
     justify-self: end;
     align-self: start;
     width: 100%;
-
+    border-radius: 200px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.croissant_pic:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgb(0, 0, 0, 0.2);
 }
 
 .treat_pic {
@@ -231,6 +238,12 @@ Here starts the second part (beige part)
     justify-self: start;
     align-self: start;
     width: 95%;
+    border-radius: 200px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.treat_pic:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgb(0, 0, 0, 0.2);
 }
 
 .croissant_png {
@@ -240,6 +253,10 @@ Here starts the second part (beige part)
     align-self: center;
     width: 90%;
     max-width: 180px;
+    transition: transform 0.4s ease;
+}
+.croissant_png:hover{
+    transform: scale(1.15);
 }
 
 .treat_png {
@@ -249,6 +266,10 @@ Here starts the second part (beige part)
     align-self: center;
     width: 90%;
     max-width: 180px;
+    transition: transform 0.4s ease;
+}
+.treat_png:hover{
+    transform: scale(1.15);
 }
 
 .tea_png {
@@ -258,6 +279,10 @@ Here starts the second part (beige part)
     align-self: start;
     width: 70%;
     max-width: 130px;
+    transition: transform 0.4s ease;
+}
+.tea_png:hover{
+    transform: scale(1.15);
 }
 
 .coffee_png {
@@ -267,6 +292,10 @@ Here starts the second part (beige part)
     align-self: end;
     width: 70%;
     max-width: 130px;
+    transition: transform 0.4s ease;
+}
+.coffee_png:hover{
+    transform: scale(1.15);
 }
 
 /* RESPONSIVE: Responsive grid adjustments */
@@ -562,7 +591,7 @@ display:flex ;
 justify-content: center;
 align-items:center ;
 padding-top: 10px;
-font-size: 200%;
+font-size: 2em;
 color: white;
 text-decoration: underline;
 }
@@ -571,7 +600,7 @@ text-decoration: underline;
 display:flex ;
 justify-content: center;
 align-items:center ;
-font-size: 200%;
+font-size: 2em;
 color: white;
 }
 
@@ -610,11 +639,31 @@ color: white;
 }
 .box1 a {
   color: #fff;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  position: relative;
+  color: #ffffff;
 }
 .box1 a:hover{
     color:  rgb(237, 229, 187);
-    /* background-color: rgb(18, 82, 102); */
+}
+
+.box1 a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1.5px;
+    width: 0;
+    background-color: #fff;
+    text-align: right;
+    opacity: 0;
+    transition: width 0.7s ease, opacity 0.5s ease;
+}
+
+.box1 a:hover::after{
+    width: 100%;
+    opacity: 1;
 }
 
 /*This is the second part of the footer*/
