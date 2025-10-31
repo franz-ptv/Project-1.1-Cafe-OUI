@@ -320,17 +320,20 @@ Impression part */
 
 /* Here starts the navbar css
 */
-.logo{
+.logo
+{
     font-size: 50px;
     font-weight: bold;
     color: rgb(237, 229, 187);
 }
 
-.navlogo{
+.navlogo
+{
 align-self: left;
 }
 
-.navbarul{
+.navbarul
+{
 list-style-type: none;
 background-color:rgb(21, 100, 123);
 padding: 0%;
@@ -342,7 +345,8 @@ align-items: center;
 font-size: 130%;
 }
 
-.navbar a{
+.navbar a
+{
     color: rgb(237, 229, 187);
     text-decoration: none;
     padding: 15px;
@@ -350,11 +354,13 @@ font-size: 130%;
     text-align: center;
 }
 
-.navbar a:hover{
+.navbar a:hover
+{
     background-color: rgb(16, 75, 93);
 }
 
-.navbar li{
+.navbar li
+{
     justify-content: center;
     display: inline-block;
 }
