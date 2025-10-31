@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalabe=no ">
     <title>Café OUI</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
     <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="images/navigation-bar/fav.png">
 </head>
