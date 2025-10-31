@@ -77,8 +77,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
                     </ul>
                 </div>
                 <div class="link">
-                    <p><a href="mailto:emmen@oui-cafe.fr">📩 emmen@oui-cafe.fr</a></p>
-                    <p><a href="tel:+31631782094">📞 +31 6 31782094</a></p>
+                    <p>
+                        <a href="mailto:emmen@oui-cafe.fr">
+                            <img src="assets/images/contact-us/mail.svg" alt="Mail icon" class="icon">
+                            emmen@oui-cafe.fr
+                        </a>
+                        </p>
+
+                        <p>
+                        <a href="tel:+31631782094">
+                            <img src="assets/images/contact-us/phone.svg" alt="Phone icon" class="icon">
+                            +31 6 31782094
+                        </a>
+                    </p>
                 </div>
                 
 

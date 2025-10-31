@@ -31,9 +31,18 @@
     padding: 10px;
 }
 
+.icon 
+{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+    color: white;
+}
+
 .form-right
 {
-    background-image: url('./assets/photos/pexels-chevanon-photography-302902.jpg');
+    background-image: url('./assets/images/contact-us/pexels-chevanon-photography-302902.png');
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -113,7 +122,7 @@ input::placeholder, textarea::placeholder
 
 .main-error
 {
-    background-image: url("assets/photos/illustrations_yellow_croissant.png");
+    background-image: url("assets/images/404/illustrations_yellow_croissant.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

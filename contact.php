@@ -34,7 +34,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style2.css">
         <link rel="stylesheet" href="stylesheet.css">
         <link rel="icon" type="image/x-icon" href="images/navigation-bar/fav.png">
     </head>
@@ -77,8 +77,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
                 </div>
 
                 <div class="link">
-                    <p><a href="mailto:emmen@oui-cafe.fr">📩 emmen@oui-cafe.fr</a></p>
-                    <p><a href="tel:+31631782094">📞 +31 6 31782094</a></p>
+                    <p>
+                        <a href="mailto:emmen@oui-cafe.fr">
+                            <img src="assets/images/contact-us/mail.svg" alt="Mail icon" class="icon">
+                            emmen@oui-cafe.fr
+                        </a>
+                        </p>
+
+                        <p>
+                        <a href="tel:+31631782094">
+                            <img src="assets/images/contact-us/phone.svg" alt="Phone icon" class="icon">
+                            +31 6 31782094
+                        </a>
+                    </p>
                 </div>
 
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4826.873940502982!2d6.91088217693991!3d52.77842821706407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b7e61f3ec72443%3A0xbe9d297b3e4fbcc7!2sNHL%20Stenden%20Hogeschool!5e0!3m2!1snl!2snl!4v1760084667689!5m2!1snl!2snl"
