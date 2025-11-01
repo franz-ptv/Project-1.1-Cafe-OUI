@@ -104,7 +104,7 @@ unset($lang_options[$current_lang]);
 
     <form method="POST" style="display:inline;">
         <button type="submit" name="toggle_mode">
-            Press for <?php echo ($_SESSION['mode'] === 'dark') ? 'Light' : 'Dark'; ?> Mode
+            Cliquer pour <?php echo ($_SESSION['mode'] === 'dark') ? 'Light' : 'Dark'; ?> Mode
         </button>
     </form>
  </div>
