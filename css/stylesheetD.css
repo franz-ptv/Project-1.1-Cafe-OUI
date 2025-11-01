@@ -166,6 +166,37 @@ body{
     outline: none;
 }
 
+/* Here starts the dark/light button styling */
+
+/* Dark mode toggle button style */
+.navactions form button[name="toggle_mode"] {
+    background-color: #223a2c; /* dark greenish */
+    color: #f0eade;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.7);
+    transition: background-color 0.3s ease;
+}
+
+/* On hover/focus */
+.navactions form button[name="toggle_mode"]:hover,
+.navactions form button[name="toggle_mode"]:focus {
+    background-color: #1c2f23;
+    outline: none;
+}
+
+/* Moon icon: UTF-8 crescent moon */
+.navactions form button[name="toggle_mode"]::after {
+    content: " \1F319"; /* 🌙 Moon */
+    font-size: 1.3rem;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
 /* Here ends everything for NavBar*/
 /* Here starts everything for the footer*/
 

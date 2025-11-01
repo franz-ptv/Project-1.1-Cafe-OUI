@@ -1,4 +1,38 @@
 <?php
+session_start();
+
+// Set default mode if not set
+if (!isset($_SESSION['mode'])) {
+    $_SESSION['mode'] = 'dark';
+}
+
+// Process the dark/light toggle if posted
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['toggle_mode'])) {
+    $_SESSION['mode'] = ($_SESSION['mode'] === 'dark') ? 'light' : 'dark';
+}
+
+// Your existing contact form validation
+$errors = [];
+if ($_SERVER["REQUEST_METHOD"] == "POST" && !isset($_POST['toggle_mode'])) {
+    $name = filter_input(INPUT_POST, "name");
+    $email = filter_input(INPUT_POST, "email");
+    $message = filter_input(INPUT_POST, "message");
+    
+    if(empty($name)) {
+        array_push($errors, 'Enter a name');
+    }
+    if(empty($email) || strpos($email, '@') === false || substr($email, -4) != ".com") {
+        array_push($errors, 'Please enter a valid email');
+    }
+    if(empty($message)) {
+        array_push($errors, 'Enter a message please');
+    }
+    if(count($errors) == 0){
+        array_push($errors, "Your message has been sent.");
+    }
+}
+?>
+<?php
 $current_file = basename($_SERVER['PHP_SELF']);
 
 switch ($current_file) {
@@ -25,35 +59,6 @@ $lang_options = [
 unset($lang_options[$current_lang]);
 ?>
 
-<?php
-$errors = [];
-// to add the errors
-if($_SERVER["REQUEST_METHOD"] == "POST")
-{
-    $name = filter_input(INPUT_POST, "name");
-    $email = filter_input(INPUT_POST, "email");
-    $message = filter_input(INPUT_POST, "message");
-
-    if(empty($name))
-    {
-        array_push($errors, 'Enter a name');
-    }
-
-    if(empty($email) || strpos($email, '@') === false || substr($email, -4) != ".com")
-    {
-        array_push($errors, 'Please enter a valid email');
-    }
-
-    if(empty($message))
-    {
-        array_push($errors, 'Enter a message please');
-    }
-
-    if(count($errors) == 0){
-        array_push($errors, "Your message has been sent.");
-    }
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -61,8 +66,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/stylesheet.css">
+        <!-- <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/stylesheet.css"> -->
+        <link rel="stylesheet" href="css/<?php echo ($_SESSION['mode'] === 'dark') ? 'stylesheetD.css' : 'stylesheetL.css'; ?>">
         <link rel="icon" type="image/x-icon" href="images/navigation-bar/fav.png">
     </head>
     <body class="contact-body">
@@ -96,7 +102,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     </ul>
 </div>
 
-    <button>Dark/Light</button>
+    <form method="POST" style="display:inline;">
+        <button type="submit" name="toggle_mode">
+            Switch to <?php echo ($_SESSION['mode'] === 'dark') ? 'Light' : 'Dark'; ?> Mode
+        </button>
+    </form>
  </div>
 </nav>
 
