@@ -164,10 +164,9 @@ body{
 
 /* Here starts the styling for the dark/light button */
 
-/* Light mode toggle button style */
 .navactions form button[name="toggle_mode"] {
-    background-color: #efedea; /* light cream */
-    color: #223a2c;
+    background-color: rgb(225, 115, 107);
+    color: rgb(68, 59, 18);
     border: none;
     border-radius: 25px;
     padding: 10px 20px;
@@ -175,19 +174,15 @@ body{
     font-weight: bold;
     cursor: pointer;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
 }
 
-/* On hover/focus */
-.navactions form button[name="toggle_mode"]:hover,
-.navactions form button[name="toggle_mode"]:focus {
-    background-color: #dedbd7;
-    outline: none;
+.navactions form button[name="toggle_mode"]:hover {
+    background-color: rgb(158, 80, 75);
 }
 
-/* Sun icon: UTF-8 sun */
 .navactions form button[name="toggle_mode"]::after {
-    content: " \2600"; /* ☀ Sun */
+    content: " \2600"; /* ☀ Sun also part of UTF-8 */
     font-size: 1.3rem;
     margin-left: 8px;
     vertical-align: middle;
