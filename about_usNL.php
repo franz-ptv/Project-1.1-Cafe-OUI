@@ -1,5 +1,4 @@
 <?php
-// Determine current page language by current PHP filename
 $current_file = basename($_SERVER['PHP_SELF']);
 
 switch ($current_file) {
@@ -17,13 +16,12 @@ switch ($current_file) {
         break;
 }
 
-// Dropdown language options excluding current language using associative arrays and keys$lang_options = [
+$lang_options = [
     'en' => ['text' => 'EN', 'page' => 'about_us.php'],
     'fr' => ['text' => 'FR', 'page' => 'about_usFR.php'],
     'nl' => ['text' => 'NL', 'page' => 'about_usNL.php'],
 ];
 
-// Remove the current language from options so it doesn't appear in dropdown
 unset($lang_options[$current_lang]);
 ?>
 
