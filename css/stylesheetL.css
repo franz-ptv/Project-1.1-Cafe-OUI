@@ -101,7 +101,7 @@ body{
     font-size: 1rem;
   }
 }
-/* NavBar Language button css*/
+/* Here starts the styling for the NavBar Language button*/
 .language-dropdown {
     position: relative;
     display: inline-block;
@@ -1362,3 +1362,8 @@ input::placeholder, textarea::placeholder
 }
 
 /* Here starts Tabis part */
+
+/* Replace this
+with her code */
+
+/* Here ends Tabis part */
