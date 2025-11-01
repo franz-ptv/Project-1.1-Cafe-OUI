@@ -3,11 +3,11 @@
 $current_file = basename($_SERVER['PHP_SELF']);
 
 switch ($current_file) {
-    case 'indexFR.php':
+    case 'about_usFR.php':
         $current_lang = 'fr';
         $current_lang_text = 'FR';
         break;
-    case 'indexNL.php':
+    case 'about_usNL.php':
         $current_lang = 'nl';
         $current_lang_text = 'NL';
         break;
@@ -19,9 +19,9 @@ switch ($current_file) {
 
 // Dropdown language options excluding current language
 $lang_options = [
-    'en' => ['text' => 'EN', 'page' => 'index.php'],
-    'fr' => ['text' => 'FR', 'page' => 'indexFR.php'],
-    'nl' => ['text' => 'NL', 'page' => 'indexNL.php'],
+    'en' => ['text' => 'EN', 'page' => 'about_us.php'],
+    'fr' => ['text' => 'FR', 'page' => 'about_usFR.php'],
+    'nl' => ['text' => 'NL', 'page' => 'about_usNL.php'],
 ];
 
 // Remove the current language from options so it doesn't appear in dropdown
