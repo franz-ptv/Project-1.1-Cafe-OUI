@@ -1,18 +1,79 @@
+<?php
+$current_file = basename($_SERVER['PHP_SELF']);
+
+switch ($current_file) {
+    case 'about_usFR.php':
+        $current_lang = 'fr';
+        $current_lang_text = 'FR';
+        break;
+    case 'about_usNL.php':
+        $current_lang = 'nl';
+        $current_lang_text = 'NL';
+        break;
+    default:
+        $current_lang = 'en';
+        $current_lang_text = 'EN';
+        break;
+}
+
+$lang_options = [
+    'en' => ['text' => 'EN', 'page' => 'about_us.php'],
+    'fr' => ['text' => 'FR', 'page' => 'about_usFR.php'],
+    'nl' => ['text' => 'NL', 'page' => 'about_usNL.php'],
+];
+
+unset($lang_options[$current_lang]);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="impression_style.css">
+    <link rel="stylesheet" href="css/impression_style.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/navigation-bar/fav.png">
     <title>About Us</title>
 </head>
-<body>
-    <section class="aboutus"
-             style="background: linear-gradient(rgba(186, 211, 238,0.6), rgba(186, 211, 238,0.6)),
-             url('images/about-us/about_us_top.png') center/cover no-repeat;">
+<body class="body_impression">
+    
+<nav class="navbar">
+ <div class="navlogo">
+    <a class="logo" href="index.php">OUI</a>
+ </div>
+ <div class="navlinks">
+    <a href="index.php">Home</a>
+    <a href="menu.php">Menu</a>
+    <a href="about_us.php">About Us</a>
+    <a href="impression.php">Impression</a>
+    <a href="contact.php">Contact us</a>
+ </div>
+ <div class="navactions">
+    <div class="language-dropdown">
+    <button class="lang-select">
+        <img src="assets/images/flags/<?php echo $current_lang; ?>.png" alt="<?php echo $current_lang_text; ?> Flag" class="flag-icon">
+        <?php echo $current_lang_text; ?>
+        <span class="arrow">&#9662;</span>
+    </button>
+    <ul class="lang-menu">
+        <?php foreach($lang_options as $lang_code => $lang): ?>
+            <li>
+                <a href="<?php echo $lang['page']; ?>">
+                    <img src="assets/images/flags/<?php echo $lang_code; ?>.png" alt="<?php echo $lang['text']; ?> Flag" class="flag-icon">
+                    <?php echo $lang['text']; ?>
+                </a>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+</div>
 
+    <button>Dark/Light</button>
+ </div>
+</nav>
+
+    <section class="aboutus">
     <div class="about_image">
-        <img src="images/about-us/about_us_cappuccino.png" alt="about_us_cappuccino" style="width: 100%;">
+        <img src="assets/images/about-us/about_us_cappuccino.png" alt="about_us_cappuccino" style="width: 100%;">
         <div class="centered">About us</div>
     </div>
     <div class="oui_about">
@@ -24,14 +85,12 @@
         Café Oui – Say yes to coffee, say yes to life.</div>
     </section>
 
-    <section class="inspiration"
-        style="background: linear-gradient(rgba(186, 211, 238,0.6), rgba(186, 211, 238,0.6)),
-        url('images/about-us/about_us_bottom.png') center/cover no-repeat;">
+    <section class="inspiration">
     <div class="lineabout1"></div>
     <div class="lineabout2"></div>
     <div class="lineabout3"></div>
     <div class="inspiration_image">
-        <img src="images/about-us/about_us_tea.png" alt="about_us_tea" style="width: 100%;">
+        <img src="assets/images/about-us/about_us_tea.png" alt="about_us_tea" style="width: 100%;">
         <div class="centered">Our inspiration</div>
     </div>
     <div class="oui_inspiration">
@@ -42,6 +101,52 @@
     <a class="button" href="impression.php" target="_blank" class="button">
         Try checking out our exhibition page
     </a>
-    </section> 
+    </section>
+  <footer>
+    <div class = "footer_container">
+
+      <div class = "box1">
+        <div class = "footer_links_row">
+          <a href="index.php">Home</a>
+          <a href="about_us.php">About us</a>
+          <a href="contact.php">Contact us</a>
+        </div>
+        <div class = "footer_links_row">
+          <a href="menu.php">Menu</a>
+          <a href="impression.php">Impression</a>
+        </div>
+      </div>
+
+      <div class = "box2">
+        <a href="index.php" class = "logo_footer">OUI</a>
+        <div class = "social_icons">
+          <a href="https://facebook.com" target="_blank">
+            <img src="assets/images/home-page/facebook-svgrepo-com.svg" alt="Facebook icon">
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <img src="assets/images/home-page/twitter-color-svgrepo-com.svg" alt="Twitter icon">
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <img src="assets/images/home-page/instagram-1-svgrepo-com.svg" alt="Instagram icon">
+          </a>
+        </div>
+      </div>
+
+      <div class = "box3">
+        <h3>Adress: Van Schaikweg 94, 7811KL Emmen</h3>
+        <h4>Working hours:</h4>
+        <ul>
+          <li>Mon - Close</li>
+          <li>Tues - 09:00 - 17:00</li>
+          <li>Wed - 09:00 - 17:00</li>
+          <li>Thurs - 09:00 - 17:00</li>
+          <li>Fri - 09:00 - 17:00</li>
+          <li>Sat - 09:00 - 17:00</li>
+          <li>Sun - 09:00 - 17:00</li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>   
 </body>
 </html>

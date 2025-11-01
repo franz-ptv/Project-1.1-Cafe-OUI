@@ -1,5 +1,4 @@
 <?php
-// Determine current page language by current PHP filename
 $current_file = basename($_SERVER['PHP_SELF']);
 
 switch ($current_file) {
@@ -17,14 +16,12 @@ switch ($current_file) {
         break;
 }
 
-// Dropdown language options excluding current language using associative arrays and keys
 $lang_options = [
     'en' => ['text' => 'EN', 'page' => 'index.php'],
     'fr' => ['text' => 'FR', 'page' => 'indexFR.php'],
     'nl' => ['text' => 'NL', 'page' => 'indexNL.php'],
 ];
 
-// Remove the current language from options so it doesn't appear in dropdown
 unset($lang_options[$current_lang]);
 ?>
 
@@ -43,14 +40,14 @@ unset($lang_options[$current_lang]);
 
 <nav class="navbar">
  <div class="navlogo">
-    <a class="logo" href="index.php">OUI</a>
+    <a class="logo" href="indexNL.php">OUI</a>
  </div>
  <div class="navlinks">
-    <a href="index.php">Home</a>
-    <a href="menu.php">Menu</a>
-    <a href="about_us.php">About Us</a>
-    <a href="impression.php">Impression</a>
-    <a href="contact.php">Contact us</a>
+    <a href="indexNL.php">Home</a>
+    <a href="menuNL.php">Menu</a>
+    <a href="about_usNL.php">Over ons</a>
+    <a href="impressionNL.php">Impresse</a>
+    <a href="contactNL.php">Contact</a>
  </div>
  <div class="navactions">
     <div class="language-dropdown">
@@ -81,7 +78,7 @@ unset($lang_options[$current_lang]);
       </div>
 
       <div class = "SecondText">
-        Café Oui - Say yes to coffee, say yes to life.
+        Café Oui - Zeg ja tegen koffie, zeg ja tegen het leven.
       </div>
   </div>
 
@@ -90,8 +87,8 @@ unset($lang_options[$current_lang]);
     <div class="line_blue"></div>
       <div class = "mid_screen">
         <div><p class="cest">C'est delicieux!</p></div>
-          <a href="menu.php" class = "menu_button" >Visit our menu</a>
-        <div><p class="delicious">Certified delicious!</p></div>
+          <a href="menuNL.php" class = "menu_button" >Bekijk ons menu</a>
+        <div><p class="delicious">Ongelofelijk lekker!</p></div>
       </div>
   <img src="assets/images/home-page/croissant.png" class="croissant_pic" alt="">
   <img src="assets/images/home-page/treat.png" class="treat_pic" alt="">
@@ -104,8 +101,8 @@ unset($lang_options[$current_lang]);
   <div class = "textbox">
     <div class="line_beige"></div>
     <div class="line_beige"></div>
-    <a href="impression.php"><p class="link_exh">Click here to check our exhibition!</p></a>
-    <p class="pared">A little bit of our French culture in your favourite cafe!</p>
+    <a href="impressionNL.php"><p class="link_exh">Klik hier om onze tentoonstelling te zien!</p></a>
+    <p class="pared">Een beetje Franse cultuur in jouw favoriete café!</p>
   </div>
 
   <footer>
@@ -113,18 +110,18 @@ unset($lang_options[$current_lang]);
 
       <div class = "box1">
         <div class = "footer_links_row">
-          <a href="index.php">Home</a>
-          <a href="about_us.php">About us</a>
-          <a href="contact.php">Contact us</a>
+          <a href="indexNL.php">Home</a>
+          <a href="about_usNL.php">Over ons</a>
+          <a href="contactNL.php">Contact</a>
         </div>
         <div class = "footer_links_row">
-          <a href="menu.php">Menu</a>
-          <a href="impression.php">Impression</a>
+          <a href="menuNL.php">Menu</a>
+          <a href="impressionNL.php">Impressie</a>
         </div>
       </div>
 
       <div class = "box2">
-        <a href="index.php" class = "logo_footer">OUI</a>
+        <a href="indexNL.php" class = "logo_footer">OUI</a>
         <div class = "social_icons">
           <a href="https://facebook.com" target="_blank">
             <img src="assets/images/home-page/facebook-svgrepo-com.svg" alt="Facebook icon">
@@ -139,16 +136,16 @@ unset($lang_options[$current_lang]);
       </div>
 
       <div class = "box3">
-        <h3>Adress: Van Schaikweg 94, 7811KL Emmen</h3>
-        <h4>Working hours:</h4>
+        <h3>Adres: Van Schaikweg 94, 7811KL Emmen</h3>
+        <h4>Openingstijden:</h4>
         <ul>
-          <li>Mon - Close</li>
-          <li>Tues - 09:00 - 17:00</li>
-          <li>Wed - 09:00 - 17:00</li>
-          <li>Thurs - 09:00 - 17:00</li>
-          <li>Fri - 09:00 - 17:00</li>
-          <li>Sat - 09:00 - 17:00</li>
-          <li>Sun - 09:00 - 17:00</li>
+          <li>Ma - Close</li>
+          <li>Di - 09:00 - 17:00</li>
+          <li>Woe - 09:00 - 17:00</li>
+          <li>Do - 09:00 - 17:00</li>
+          <li>Vrij - 09:00 - 17:00</li>
+          <li>Zat - 09:00 - 17:00</li>
+          <li>Zon - 09:00 - 17:00</li>
         </ul>
       </div>
 

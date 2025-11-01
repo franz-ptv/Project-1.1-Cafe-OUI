@@ -33,20 +33,20 @@ unset($lang_options[$current_lang]);
     <link rel="stylesheet" href="css/impression_style.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="icon" type="image/x-icon" href="assets/images/navigation-bar/fav.png">
-    <title>Impression</title>
+    <title>impressie</title>
 </head>
 <body class="body_impression">
 
 <nav class="navbar">
  <div class="navlogo">
-    <a class="logo" href="index.php">OUI</a>
+    <a class="logo" href="indexNL.php">OUI</a>
  </div>
  <div class="navlinks">
-    <a href="index.php">Home</a>
-    <a href="menu.php">Menu</a>
-    <a href="about_us.php">About Us</a>
-    <a href="impression.php">Impression</a>
-    <a href="contact.php">Contact us</a>
+    <a href="indexNL.php">Home</a>
+    <a href="menuNL.php">Menu</a>
+    <a href="about_usNL.php">Over ons</a>
+    <a href="impressionNL.php">Impresse</a>
+    <a href="contactNL.php">Contact</a>
  </div>
  <div class="navactions">
     <div class="language-dropdown">
@@ -74,8 +74,8 @@ unset($lang_options[$current_lang]);
     <section class="exhibition">
 
         <div class="exhibition-header">
-            <h3>First try checking our</h3>
-            <h1>EXHIBITION</h1>
+            <h3>Kijk eerst naar onze laatste</h3>
+            <h1>TENTOONSTELLING</h1>
         </div>
 
         <div class="exhibition-gallery">
@@ -108,7 +108,7 @@ unset($lang_options[$current_lang]);
     <section class="impression_part">
         <div class="impression-header">
             <div class="border4"></div>
-            <h1>Always doing our best for a good impression!</h1>
+            <h1>Wij doen altijd ons best voor een goede impressie!</h1>
         </div>
         <div class="gallery-grid">
             <img class="img-croissant" src="assets/images/impression/small_croissant.png" alt="croissant">
@@ -134,18 +134,18 @@ unset($lang_options[$current_lang]);
 
       <div class = "box1">
         <div class = "footer_links_row">
-          <a href="index.php">Home</a>
-          <a href="about_us.php">About us</a>
-          <a href="contact.php">Contact us</a>
+          <a href="indexNL.php">Home</a>
+          <a href="about_usNL.php">Over ons</a>
+          <a href="contactNL.php">Contact</a>
         </div>
         <div class = "footer_links_row">
-          <a href="menu.php">Menu</a>
-          <a href="impression.php">Impression</a>
+          <a href="menuNL.php">Menu</a>
+          <a href="impressionNL.php">Impressie</a>
         </div>
       </div>
 
       <div class = "box2">
-        <a href="index.php" class = "logo_footer">OUI</a>
+        <a href="indexNL.php" class = "logo_footer">OUI</a>
         <div class = "social_icons">
           <a href="https://facebook.com" target="_blank">
             <img src="assets/images/home-page/facebook-svgrepo-com.svg" alt="Facebook icon">
@@ -160,21 +160,20 @@ unset($lang_options[$current_lang]);
       </div>
 
       <div class = "box3">
-        <h3>Adress: Van Schaikweg 94, 7811KL Emmen</h3>
-        <h4>Working hours:</h4>
+        <h3>Adres: Van Schaikweg 94, 7811KL Emmen</h3>
+        <h4>Openingstijden:</h4>
         <ul>
-          <li>Mon - Close</li>
-          <li>Tues - 09:00 - 17:00</li>
-          <li>Wed - 09:00 - 17:00</li>
-          <li>Thurs - 09:00 - 17:00</li>
-          <li>Fri - 09:00 - 17:00</li>
-          <li>Sat - 09:00 - 17:00</li>
-          <li>Sun - 09:00 - 17:00</li>
+          <li>Ma - Close</li>
+          <li>Di - 09:00 - 17:00</li>
+          <li>Woe - 09:00 - 17:00</li>
+          <li>Do - 09:00 - 17:00</li>
+          <li>Vrij - 09:00 - 17:00</li>
+          <li>Zat - 09:00 - 17:00</li>
+          <li>Zon - 09:00 - 17:00</li>
         </ul>
       </div>
 
     </div>
-  </footer>
-
+  </footer>  
 </body>
 </html>

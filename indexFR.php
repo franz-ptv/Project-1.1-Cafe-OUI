@@ -1,5 +1,4 @@
 <?php
-// Determine current page language by current PHP filename
 $current_file = basename($_SERVER['PHP_SELF']);
 
 switch ($current_file) {
@@ -17,14 +16,12 @@ switch ($current_file) {
         break;
 }
 
-// Dropdown language options excluding current language using associative arrays and keys
 $lang_options = [
     'en' => ['text' => 'EN', 'page' => 'index.php'],
     'fr' => ['text' => 'FR', 'page' => 'indexFR.php'],
     'nl' => ['text' => 'NL', 'page' => 'indexNL.php'],
 ];
 
-// Remove the current language from options so it doesn't appear in dropdown
 unset($lang_options[$current_lang]);
 ?>
 
@@ -43,14 +40,14 @@ unset($lang_options[$current_lang]);
 
 <nav class="navbar">
  <div class="navlogo">
-    <a class="logo" href="index.php">OUI</a>
+    <a class="logo" href="indexFR.php">OUI</a>
  </div>
  <div class="navlinks">
-    <a href="index.php">Home</a>
-    <a href="menu.php">Menu</a>
-    <a href="about_us.php">About Us</a>
-    <a href="impression.php">Impression</a>
-    <a href="contact.php">Contact us</a>
+    <a href="indexFR.php">Home</a>
+    <a href="menuFR.php">Menu</a>
+    <a href="about_usFR.php">À propos</a>
+    <a href="impressionFR.php">Impression</a>
+    <a href="contactFR.php">Contact</a>
  </div>
  <div class="navactions">
     <div class="language-dropdown">
@@ -81,7 +78,7 @@ unset($lang_options[$current_lang]);
       </div>
 
       <div class = "SecondText">
-        Café Oui - Say yes to coffee, say yes to life.
+        Café Oui - Dites oui au café, dites oui à la vie.
       </div>
   </div>
 
@@ -90,8 +87,8 @@ unset($lang_options[$current_lang]);
     <div class="line_blue"></div>
       <div class = "mid_screen">
         <div><p class="cest">C'est delicieux!</p></div>
-          <a href="menu.php" class = "menu_button" >Visit our menu</a>
-        <div><p class="delicious">Certified delicious!</p></div>
+          <a href="menuFR.php" class = "menu_button" >Découvrez notre menu</a>
+        <div><p class="delicious">Incroyablement bon!</p></div>
       </div>
   <img src="assets/images/home-page/croissant.png" class="croissant_pic" alt="">
   <img src="assets/images/home-page/treat.png" class="treat_pic" alt="">
@@ -104,8 +101,8 @@ unset($lang_options[$current_lang]);
   <div class = "textbox">
     <div class="line_beige"></div>
     <div class="line_beige"></div>
-    <a href="impression.php"><p class="link_exh">Click here to check our exhibition!</p></a>
-    <p class="pared">A little bit of our French culture in your favourite cafe!</p>
+    <a href="impressionFR.php"><p class="link_exh">Cliquez ici pour voir notre exposition!</p></a>
+    <p class="pared">Un peu de culture française dans votre café préféré!</p>
   </div>
 
   <footer>
@@ -113,18 +110,18 @@ unset($lang_options[$current_lang]);
 
       <div class = "box1">
         <div class = "footer_links_row">
-          <a href="index.php">Home</a>
-          <a href="about_us.php">About us</a>
-          <a href="contact.php">Contact us</a>
+          <a href="indexFR.php">Accueil</a>
+          <a href="about_usFR.php">À propos</a>
+          <a href="contactFR.php">Contact</a>
         </div>
         <div class = "footer_links_row">
-          <a href="menu.php">Menu</a>
-          <a href="impression.php">Impression</a>
+          <a href="menuFR.php">Menu</a>
+          <a href="impressionFR.php">Impression</a>
         </div>
       </div>
 
       <div class = "box2">
-        <a href="index.php" class = "logo_footer">OUI</a>
+        <a href="indexFR.php" class = "logo_footer">OUI</a>
         <div class = "social_icons">
           <a href="https://facebook.com" target="_blank">
             <img src="assets/images/home-page/facebook-svgrepo-com.svg" alt="Facebook icon">
@@ -139,16 +136,16 @@ unset($lang_options[$current_lang]);
       </div>
 
       <div class = "box3">
-        <h3>Adress: Van Schaikweg 94, 7811KL Emmen</h3>
-        <h4>Working hours:</h4>
+        <h3>Adresse: Van Schaikweg 94, 7811KL Emmen</h3>
+        <h4>Heures d'ouverture:</h4>
         <ul>
-          <li>Mon - Close</li>
-          <li>Tues - 09:00 - 17:00</li>
-          <li>Wed - 09:00 - 17:00</li>
-          <li>Thurs - 09:00 - 17:00</li>
-          <li>Fri - 09:00 - 17:00</li>
-          <li>Sat - 09:00 - 17:00</li>
-          <li>Sun - 09:00 - 17:00</li>
+          <li>Lun - Close</li>
+          <li>Mar - 09:00 - 17:00</li>
+          <li>Mer - 09:00 - 17:00</li>
+          <li>Jeu - 09:00 - 17:00</li>
+          <li>Ven - 09:00 - 17:00</li>
+          <li>Sam - 09:00 - 17:00</li>
+          <li>Dim - 09:00 - 17:00</li>
         </ul>
       </div>
 
