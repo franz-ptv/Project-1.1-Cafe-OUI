@@ -816,6 +816,9 @@ font-size: 2em;
 color: white;
 text-decoration: underline;
 }
+.link_exh:hover{
+    color: rgb(235, 232, 216);
+}
 .pared{
 display:flex ;
 justify-content: center;
