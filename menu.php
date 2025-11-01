@@ -56,7 +56,7 @@
       <span class="side-text-vertical">Home-made lemonade</span>
     </div>
     <div class="drink-item bottom">
-      <img src="images/asset/cappuccino.png" alt="Cappuccino" class="menu-img">
+      <img src="images/menu/cappuccino.png" alt="Cappuccino" class="menu-img">
       <span class="side-text-vertical">Cappuccino</span>
     </div>
   </div>
