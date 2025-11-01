@@ -1,7 +1,10 @@
-body{
+.body_main_page{
     margin: 0;
     display: flex;
     flex-direction: column;
+}
+body{
+    margin: 0;
 }
 
 
@@ -31,18 +34,18 @@ body{
 }
 
 .arrow {
-    font-size: 0.6rem;
+    font-size: 1rem;
     user-select: none;
 }
 
 .lang-menu {
-    display: none; /* hidden by default */
+    display: none;
     position: absolute;
     background-color: rgb(21, 100, 123);
     list-style: none;
     padding: 5px 0;
     margin: 0;
-    border-radius: 8px;
+    border-radius: 5px;
     min-width: 90px;
     top: 100%;
     left: 0;
@@ -214,7 +217,7 @@ body{
 
 .line_blue{
 margin-top: 4px;
-width: 100vw;
+width: 100%;
 height: 2px;
 background-color: rgb(21, 100, 123);
 position: absolute;
@@ -222,7 +225,7 @@ position: absolute;
 
 .line_beige{
 margin-top: 4px;
-width: 100vw;
+width: 100%;
 height: 2px;
 background-color: rgb(237, 229, 187);
 }

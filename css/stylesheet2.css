@@ -1,7 +1,5 @@
 body{
     margin: 0;
-    display: flex;
-    flex-direction: column;
 }
 
 /* Here starts the NavBar*/
@@ -10,7 +8,7 @@ body{
      display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(21, 100, 123);
+    background-color: rgb(133, 233, 255);
     padding: 0 20px;
     margin: 0;
     font-size: 130%;
@@ -22,11 +20,11 @@ body{
 .logo {
     font-size: 50px;
     font-weight: bold;
-    color: rgb(237, 229, 187);
+    color: rgb(68, 59, 18);
     text-decoration: none;
 }
 .logo:hover{
-    background-color: rgb(16, 75, 93) ;
+    background-color: rgb(113, 213, 235);
 }
 .navlinks {
     display: flex;
@@ -34,7 +32,7 @@ body{
     flex-wrap: wrap;
 }
 .navlinks a {
-    color: rgb(237, 229, 187);
+    color: rgb(68, 59, 18);
     text-decoration: none;
     padding: 12px 15px;
     display: block;
@@ -43,7 +41,7 @@ body{
     white-space: nowrap;
 }
 .navlinks a:hover {
-    background-color: rgb(16, 75, 93);
+    background-color: rgb(105, 182, 200);
 }
 .navactions {
     display: flex;
@@ -117,7 +115,7 @@ body{
     align-items: center;
     gap: 8px;
     font-size: 1rem;
-    color: #ede5bb;
+    color: rgb(225, 115, 107);
     padding: 5px 10px;
 }
 .flag-icon {
@@ -133,7 +131,7 @@ body{
 .lang-menu {
     display: none;
     position: absolute;
-    background-color: rgb(21, 100, 123);
+    background-color:rgb(133, 233, 255);
     list-style: none;
     padding: 5px 0;
     margin: 0;
@@ -148,13 +146,13 @@ body{
     align-items: center;
     gap: 8px;
     padding: 6px 12px;
-    color: #ede5bb;
+    color: rgb(68, 59, 18);
     text-decoration: none;
     white-space: nowrap;
 }
 .lang-menu li a:hover {
-    background-color: rgb(16, 75, 93);
-    color: white;
+    background-color: rgb(133, 233, 255);
+    color:rgb(225, 115, 107);
 }
 .language-dropdown:hover .lang-menu,
 .language-dropdown:focus-within .lang-menu {
@@ -168,10 +166,15 @@ body{
 /* Here starts the hero section of the site (blue part)
 */
 
+.body_main_page{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
 .firstimg{
     /*width: 100vw;*/
     height: 100vh;
-    background-image: url("../assets/images/home-page/CafeBlue.png");
+    background-image: url("../assets/images/home-page/CafeBlue2.png");
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center;
@@ -181,7 +184,7 @@ body{
 
 .FirstText{
     display: inline-block;
-    color: rgb(237, 229, 187);
+    color: rgb(68, 59, 18);
     font-size: 15em;
     font-family:'Caveat';
     position:relative;
@@ -192,7 +195,7 @@ body{
 .SecondText{
     font-size: 3em;
     font-family: 'Caveat';
-    color: rgb(237, 229, 187);
+    color: rgb(68, 59, 18);
     position: absolute;
     align-items: center;
     align-self: center;
@@ -201,17 +204,17 @@ body{
 
 .line_blue{
 margin-top: 4px;
-width: 100vw;
+width: 100%;
 height: 2px;
-background-color: rgb(21, 100, 123);
+background-color: rgb(133, 233, 255);
 position: absolute;
 }
 
 .line_beige{
 margin-top: 4px;
-width: 100vw;
+width: 100%;
 height: 2px;
-background-color: rgb(237, 229, 187);
+background-color: rgb(68, 59, 18);
 }
 
 /*
@@ -219,7 +222,7 @@ Here starts the second part (beige part)
 */
 .cest{
     font-size: 3em;
-    color: rgb(21, 100, 123);
+    color: rgb(133, 233, 255);
 }
 
 .menu_button{
@@ -228,8 +231,8 @@ Here starts the second part (beige part)
     height: 80px;
     line-height: 80px;
     font-size: 200%;
-    background-color: rgb(21, 100, 123);
-    color: white;
+    background-color: rgb(133, 233, 255);
+    color: rgb(225, 115, 107);
     border-radius: 25px;
     text-decoration: underline;
     border: none;
@@ -240,7 +243,7 @@ Here starts the second part (beige part)
 }
 
 .menu_button:hover{
-    background-color: rgba(21, 99, 123, 0.85);
+    background-color: rgb(133, 233, 255, 0.85);
     width: 290px;
     height: 75px;
     border-radius: 35px;
@@ -248,13 +251,13 @@ Here starts the second part (beige part)
 
 .delicious{
     font-size: 2.5em;
-    color: rgb(21, 100, 123);
+    color: rgb(133, 233, 255);
 }
 
 .secondimg {
     width: 100%;
     height: 100vh;
-    background-image: url("../assets/images/home-page/InteiorBeige.png");
+    background-image: url("../assets/images/home-page/InteiorBeige2.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -362,7 +365,7 @@ Here starts the second part (beige part)
 @media (max-width: 1300px){
         .FirstText{
         display: inline-block;
-        color: rgb(237, 229, 187);
+        color: rgb(68, 59, 18);
         font-size: 13em;
         font-family:'Caveat';
         position:relative;
@@ -373,7 +376,7 @@ Here starts the second part (beige part)
 @media (max-width: 900px) { /* NOT READY NEED NAVBAR*/
     .FirstText{
         display: inline-block;
-        color: rgb(237, 229, 187);
+        color: rgb(68, 59, 18);
         font-size: 10em;
         font-family:'Caveat';
         position:relative;
@@ -442,7 +445,7 @@ Here starts the second part (beige part)
 
     .FirstText{
         display: inline-block;
-        color: rgb(237, 229, 187);
+        color: rgb(68, 59, 18);
         font-size: 9em;
         font-family:'Caveat';
         position:relative;
@@ -452,7 +455,7 @@ Here starts the second part (beige part)
     .SecondText{
         font-size: 200%;
         font-family: 'Caveat';
-        color: rgb(237, 229, 187);
+        color: rgb(68, 59, 18);
         position: absolute;
         align-items: center;
         align-self: center;
@@ -465,7 +468,7 @@ Here starts the second part (beige part)
 @media (max-width: 600px) { /* READY*/
     .FirstText{
         display: inline-block;
-        color: rgb(237, 229, 187);
+        color: rgb(68, 59, 18);
         font-size: 5em;
         font-family:'Caveat';
         position:relative;
@@ -475,7 +478,7 @@ Here starts the second part (beige part)
     .SecondText{
         font-size: 150%;
         font-family: 'Caveat';
-        color: rgb(237, 229, 187);
+        color: rgb(68, 59, 18);
         position: absolute;
         align-items: center;
         align-self: center;
@@ -599,33 +602,33 @@ Here starts the second part (beige part)
         grid-column: 12/42;
         grid-row: 14/18;
         font-size: 200%;
-        color: rgb(21, 100, 123);
+        color: rgb(133, 233, 255);
     }
     .menu_button{
         width: 150px;
         height: 65px;
         font-size: 120%;
-        background-color: rgb(21, 100, 123);
-        color: white;
+        background-color: rgb(133, 233, 255);
+        color: rgb(225, 115, 107);
         border-radius: 25px;
         text-decoration: underline;
         border: 0cap;
         transition: all 0.5s;
     }
     .menu_button:hover{
-        background-color: rgba(21, 99, 123, 0.85);
+        background-color: rgba(133, 233, 255, 0.85);
         width: 310px;
     }
     .delicious{
         font-size: 150%;
-        color: rgb(21, 100, 123);
+        color: rgb(133, 233, 255);
     }
 }
 @media (max-width: 360px){ /* READY*/
     .SecondText{
         font-size: 120%;
         font-family: 'Caveat';
-        color: rgb(237, 229, 187);
+        color: rgb(68, 59, 18);
         position: absolute;
         align-items: center;
         align-self: center;
@@ -643,7 +646,7 @@ Here starts the third part (red part)
     padding: 0%;
     /*width: 100vw;*/
     height: 200px;
-    background-color: rgb(149, 38, 31);
+    background-color: rgb(225, 115, 107);
 }
 
 .link_exh{
@@ -652,7 +655,7 @@ justify-content: center;
 align-items:center ;
 padding-top: 10px;
 font-size: 2em;
-color: white;
+color: rgb(68, 59, 18);
 text-decoration: underline;
 }
 
@@ -661,7 +664,7 @@ display:flex ;
 justify-content: center;
 align-items:center ;
 font-size: 2em;
-color: white;
+color: rgb(68, 59, 18);
 }
 
 /* Here starts the footer part
@@ -674,7 +677,7 @@ color: white;
 .footer_container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: rgba(21, 99, 123);
+    background-color: rgb(133, 233, 255);
     width: auto;
     height: 250px;
 }
@@ -682,7 +685,7 @@ color: white;
 /* This is the first part of the footer*/
 
 .box1{
-    background-color: rgb(21, 100, 123);
+    background-color: rgb(133, 233, 255);
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -698,14 +701,14 @@ color: white;
     gap: 32px;
 }
 .box1 a {
-  color: #fff;
+  color: rgb(68, 59, 18);
   transition: color 0.3s ease;
   text-decoration: none;
   position: relative;
-  color: #ffffff;
+  color: rgb(68, 59, 18);
 }
 .box1 a:hover{
-    color:  rgb(237, 229, 187);
+    color:  rgb(127, 110, 34);
 }
 
 .box1 a::after{
@@ -715,7 +718,7 @@ color: white;
     bottom: 0;
     height: 1.5px;
     width: 0;
-    background-color: #fff;
+    background-color: rgb(68, 59, 18);
     text-align: right;
     opacity: 0;
     transition: width 0.7s ease, opacity 0.5s ease;
@@ -729,7 +732,7 @@ color: white;
 /*This is the second part of the footer*/
 
 .box2{
-    background-color: rgb(21, 100, 123);
+    background-color: rgb(133, 233, 255);
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -740,14 +743,14 @@ color: white;
 .logo_footer{
     font-size: 4.7rem;
     justify-self:center ;
-    color: rgb(237, 229, 187);
+    color: rgb(68, 59, 18);
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 1px;
     transition: color 0.3s;
 }
 .logo_footer:hover{
-    color: rgb(173, 164, 119);
+    color: rgb(111, 96, 30);
 }
 
 .social_icons{
@@ -773,7 +776,7 @@ color: white;
 /* This is the third part of the footer*/
 
 .box3{
-    background-color: rgb(21, 100, 123);
+    background-color: rgb(133, 233, 255);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -784,13 +787,13 @@ color: white;
     margin: 8px 0 0 0;
     font-weight: 500;
     font-size: 1.3rem;
-    color: #fff;
+    color: rgb(68, 59, 18);
 }
 
 .box3 ul{
     list-style: none;
     margin: 10px 0 0 0;
-    color: #fff;
+    color: rgb(68, 59, 18);
 }
 
 .box3 ul li{
