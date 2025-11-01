@@ -37,7 +37,7 @@ unset($lang_options[$current_lang]);
 </head>
 
 <body>
-
+<div class = "body_main_page">
 <nav class="navbar">
  <div class="navlogo">
     <a class="logo" href="indexFR.php">OUI</a>
@@ -152,5 +152,6 @@ unset($lang_options[$current_lang]);
     </div>
   </footer>
   
+</div>
 </body>
 </html>

@@ -37,6 +37,7 @@ unset($lang_options[$current_lang]);
 </head>
 
 <body>
+<div class = "body_main_page">
 
 <nav class="navbar">
  <div class="navlogo">
@@ -152,5 +153,6 @@ unset($lang_options[$current_lang]);
     </div>
   </footer>
   
+</div>
 </body>
 </html>

@@ -40,40 +40,41 @@ unset($lang_options[$current_lang]);
 </head>
 
 <body>
+<div class = "body_main_page">
 
-<nav class="navbar">
- <div class="navlogo">
-    <a class="logo" href="index.php">OUI</a>
- </div>
- <div class="navlinks">
-    <a href="index.php">Home</a>
-    <a href="menu.php">Menu</a>
-    <a href="about_us.php">About Us</a>
-    <a href="impression.php">Impression</a>
-    <a href="contact.php">Contact us</a>
- </div>
- <div class="navactions">
-    <div class="language-dropdown">
-    <button class="lang-select">
-        <img src="assets/images/flags/<?php echo $current_lang; ?>.png" alt="<?php echo $current_lang_text; ?> Flag" class="flag-icon">
-        <?php echo $current_lang_text; ?>
-        <span class="arrow">&#9662;</span>
-    </button>
-    <ul class="lang-menu">
-        <?php foreach($lang_options as $lang_code => $lang): ?>
-            <li>
-                <a href="<?php echo $lang['page']; ?>">
-                    <img src="assets/images/flags/<?php echo $lang_code; ?>.png" alt="<?php echo $lang['text']; ?> Flag" class="flag-icon">
-                    <?php echo $lang['text']; ?>
-                </a>
-            </li>
-        <?php endforeach; ?>
-    </ul>
-</div>
+  <nav class="navbar">
+  <div class="navlogo">
+      <a class="logo" href="index.php">OUI</a>
+  </div>
+  <div class="navlinks">
+      <a href="index.php">Home</a>
+      <a href="menu.php">Menu</a>
+      <a href="about_us.php">About Us</a>
+      <a href="impression.php">Impression</a>
+      <a href="contact.php">Contact us</a>
+  </div>
+  <div class="navactions">
+      <div class="language-dropdown">
+      <button class="lang-select">
+          <img src="assets/images/flags/<?php echo $current_lang; ?>.png" alt="<?php echo $current_lang_text; ?> Flag" class="flag-icon">
+          <?php echo $current_lang_text; ?>
+          <span class="arrow">&#9662;</span>
+      </button>
+      <ul class="lang-menu">
+          <?php foreach($lang_options as $lang_code => $lang): ?>
+              <li>
+                  <a href="<?php echo $lang['page']; ?>">
+                      <img src="assets/images/flags/<?php echo $lang_code; ?>.png" alt="<?php echo $lang['text']; ?> Flag" class="flag-icon">
+                      <?php echo $lang['text']; ?>
+                  </a>
+              </li>
+          <?php endforeach; ?>
+      </ul>
+  </div>
 
-    <button>Dark/Light</button>
- </div>
-</nav>
+      <button>Dark/Light</button>
+  </div>
+  </nav>
 
   <div class = "firstimg">
       <div class = "FirstText">
@@ -155,5 +156,6 @@ unset($lang_options[$current_lang]);
     </div>
   </footer>
   
+</div>
 </body>
 </html>
