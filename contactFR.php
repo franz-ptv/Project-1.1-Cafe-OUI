@@ -72,14 +72,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         
 <nav class="navbar">
  <div class="navlogo">
-    <a class="logo" href="index.php">OUI</a>
+    <a class="logo" href="indexFR.php">OUI</a>
  </div>
  <div class="navlinks">
-    <a href="index.php">Home</a>
-    <a href="menu.php">Menu</a>
-    <a href="about_us.php">À propos</a>
-    <a href="impression.php">Impression</a>
-    <a href="contact.php">Contact</a>
+    <a href="indexFR.php">Home</a>
+    <a href="menuFR.php">Menu</a>
+    <a href="about_usFR.php">À propos</a>
+    <a href="impressionFR.php">Impression</a>
+    <a href="contactFR.php">Contact</a>
  </div>
  <div class="navactions">
     <div class="language-dropdown">

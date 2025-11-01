@@ -43,7 +43,7 @@ unset($lang_options[$current_lang]);
 
 <nav class="navbar">
  <div class="navlogo">
-    <a class="logo" href="index.php">OUI</a>
+    <a class="logo" href="indexFR.php">OUI</a>
  </div>
  <div class="navlinks">
     <a href="indexFR.php">Home</a>
