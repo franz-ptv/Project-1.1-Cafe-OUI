@@ -1,3 +1,33 @@
+<?php
+// Determine current page language by current PHP filename
+$current_file = basename($_SERVER['PHP_SELF']);
+
+switch ($current_file) {
+    case 'indexFR.php':
+        $current_lang = 'fr';
+        $current_lang_text = 'FR';
+        break;
+    case 'indexNL.php':
+        $current_lang = 'nl';
+        $current_lang_text = 'NL';
+        break;
+    default:
+        $current_lang = 'en';
+        $current_lang_text = 'EN';
+        break;
+}
+
+// Dropdown language options excluding current language
+$lang_options = [
+    'en' => ['text' => 'EN', 'page' => 'index.php'],
+    'fr' => ['text' => 'FR', 'page' => 'indexFR.php'],
+    'nl' => ['text' => 'NL', 'page' => 'indexNL.php'],
+];
+
+// Remove the current language from options so it doesn't appear in dropdown
+unset($lang_options[$current_lang]);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,14 +46,31 @@
     <a class="logo" href="index.php">OUI</a>
  </div>
  <div class="navlinks">
-    <a href="index.php">Home</a>
-    <a href="menu.php">Menu</a>
-    <a href="about_us.php">À propos</a>
-    <a href="impression.php">Impression</a>
-    <a href="contact.php">Contact</a>
+    <a href="indexFR.php">Home</a>
+    <a href="menuFR.php">Menu</a>
+    <a href="about_usFR.php">À propos</a>
+    <a href="impressionFR.php">Impression</a>
+    <a href="contactFR.php">Contact</a>
  </div>
  <div class="navactions">
-    <button>Language</button>
+    <div class="language-dropdown">
+    <button class="lang-select">
+        <img src="assets/images/flags/<?php echo $current_lang; ?>.png" alt="<?php echo $current_lang_text; ?> Flag" class="flag-icon">
+        <?php echo $current_lang_text; ?>
+        <span class="arrow">&#9662;</span>
+    </button>
+    <ul class="lang-menu">
+        <?php foreach($lang_options as $lang_code => $lang): ?>
+            <li>
+                <a href="<?php echo $lang['page']; ?>">
+                    <img src="assets/images/flags/<?php echo $lang_code; ?>.png" alt="<?php echo $lang['text']; ?> Flag" class="flag-icon">
+                    <?php echo $lang['text']; ?>
+                </a>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+</div>
+
     <button>Dark/Light</button>
  </div>
 </nav>
