@@ -1,11 +1,11 @@
 /* here starts everything for the NavBar*/
+
 /* here starts the lang css button*/
 .language-dropdown {
     position: relative;
     display: inline-block;
     font-family: sans-serif;
 }
-
 .lang-select {
     background: transparent;
     border: none;
@@ -17,21 +17,18 @@
     color: #ede5bb;
     padding: 5px 10px;
 }
-
 .flag-icon {
     width: 24px;
     height: 16px;
     object-fit: cover;
     display: inline-block;
 }
-
 .arrow {
     font-size: 0.6rem;
     user-select: none;
 }
-
 .lang-menu {
-    display: none; /* hidden by default */
+    display: none;
     position: absolute;
     background-color: rgb(21, 100, 123);
     list-style: none;
@@ -43,7 +40,6 @@
     left: 0;
     z-index: 1000;
 }
-
 .lang-menu li a {
     display: flex;
     align-items: center;
@@ -53,26 +49,22 @@
     text-decoration: none;
     white-space: nowrap;
 }
-
 .lang-menu li a:hover {
     background-color: rgb(16, 75, 93);
     color: white;
 }
-
 /* Show dropdown on button focus or dropdown hovered */
 .language-dropdown:hover .lang-menu,
 .language-dropdown:focus-within .lang-menu {
     display: block;
 }
-
 /* Optional: Remove default button focus outline but keep accessibility */
 .lang-select:focus {
     outline: none;
 }
 
 
-
-/* Here starts the NavBar*/
+/* Here starts the rest of the NavBar*/
 
 .navbar {
      display: flex;
@@ -180,7 +172,6 @@
 .footer{
     width: 100%;
 }
-
 .footer_container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -217,7 +208,6 @@
 .box1 a:hover{
     color:  rgb(237, 229, 187);
 }
-
 .box1 a::after{
     content: "";
     position: absolute;
@@ -230,7 +220,6 @@
     opacity: 0;
     transition: width 0.7s ease, opacity 0.5s ease;
 }
-
 .box1 a:hover::after{
     width: 100%;
     opacity: 1;
@@ -246,7 +235,6 @@
     align-items: center;
     padding-top: 30px;
 }
-
 .logo_footer{
     font-size: 4.7rem;
     justify-self:center ;
@@ -259,7 +247,6 @@
 .logo_footer:hover{
     color: rgb(173, 164, 119);
 }
-
 .social_icons{
 
     display: flex;
@@ -289,20 +276,17 @@
     text-align: center;
     align-items: center;
 }
-
 .box3 h3, .box3 h4{
     margin: 8px 0 0 0;
     font-weight: 500;
     font-size: 1.3rem;
     color: #fff;
 }
-
 .box3 ul{
     list-style: none;
     margin: 10px 0 0 0;
     color: #fff;
 }
-
 .box3 ul li{
     font-size: 1.1rem;
     padding: 0.5px 0;
@@ -343,7 +327,6 @@
     display: flex;
     justify-content: center;
 }
-
 .FirstText{
     display: inline-block;
     color: rgb(237, 229, 187);
@@ -353,7 +336,6 @@
     align-self: center;
     padding-bottom: 10%;
 }
-
 .SecondText{
     font-size: 3em;
     font-family: 'Caveat';
@@ -363,7 +345,6 @@
     align-self: center;
     padding-top: 10%;
 }
-
 .line_blue{
 margin-top: 4px;
 width: 100vw;
@@ -371,7 +352,6 @@ height: 2px;
 background-color: rgb(21, 100, 123);
 position: absolute;
 }
-
 .line_beige{
 margin-top: 4px;
 width: 100vw;
@@ -386,7 +366,6 @@ Here starts the second part (beige part)
     font-size: 3em;
     color: rgb(21, 100, 123);
 }
-
 .menu_button{
     display: inline-block;
     width: 300px;
@@ -403,19 +382,16 @@ Here starts the second part (beige part)
     user-select: none;
     transition: all 0.5s;
 }
-
 .menu_button:hover{
     background-color: rgba(21, 99, 123, 0.85);
     width: 290px;
     height: 75px;
     border-radius: 35px;
 }
-
 .delicious{
     font-size: 2.5em;
     color: rgb(21, 100, 123);
 }
-
 .secondimg {
     width: 100%;
     height: 100vh;
@@ -431,7 +407,6 @@ Here starts the second part (beige part)
     gap: 0;
 }
 
-
 .mid_screen {
     grid-column: 21 / 32;
     grid-row: 12 / 35;
@@ -441,7 +416,6 @@ Here starts the second part (beige part)
     align-items: center;
     padding: 0 10px;
 }
-
 
 .croissant_pic {
     grid-column: 34 / 48;
@@ -456,7 +430,6 @@ Here starts the second part (beige part)
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgb(0, 0, 0, 0.2);
 }
-
 .treat_pic {
     grid-column: 5 / 20;
     grid-row: 19/ 35;
@@ -470,7 +443,6 @@ Here starts the second part (beige part)
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgb(0, 0, 0, 0.2);
 }
-
 .croissant_png {
     grid-column: 9 / 25;
     grid-row: 7 / 11;
@@ -483,7 +455,6 @@ Here starts the second part (beige part)
 .croissant_png:hover{
     transform: scale(1.15);
 }
-
 .treat_png {
     grid-column: 28 / 45;
     grid-row: 40 / 45;
@@ -496,7 +467,6 @@ Here starts the second part (beige part)
 .treat_png:hover{
     transform: scale(1.15);
 }
-
 .tea_png {
     grid-column: 26 / 36;
     grid-row: 1 / 3;
@@ -509,7 +479,6 @@ Here starts the second part (beige part)
 .tea_png:hover{
     transform: scale(1.15);
 }
-
 .coffee_png {
     grid-column: 20 / 26;
     grid-row: 37 / 42;
@@ -623,7 +592,6 @@ Here starts the second part (beige part)
         align-self: center;
         padding-top: 10%;
     }
-
 
 }
 
@@ -810,7 +778,6 @@ Here starts the third part (red part)
     height: 200px;
     background-color: rgb(149, 38, 31);
 }
-
 .link_exh{
 display:flex ;
 justify-content: center;
@@ -820,7 +787,6 @@ font-size: 2em;
 color: white;
 text-decoration: underline;
 }
-
 .pared{
 display:flex ;
 justify-content: center;
