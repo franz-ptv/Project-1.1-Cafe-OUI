@@ -17,7 +17,7 @@ switch ($current_file) {
         break;
 }
 
-// Dropdown language options excluding current language
+// Dropdown language options excluding current language using associative arrays and keys
 $lang_options = [
     'en' => ['text' => 'EN', 'page' => 'index.php'],
     'fr' => ['text' => 'FR', 'page' => 'indexFR.php'],
