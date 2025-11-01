@@ -48,7 +48,7 @@ unset($lang_options[$current_lang]);
     <!-- <link rel="stylesheet" href="css/stylesheet.css"> -->
      <link rel="stylesheet" href="css/<?php echo ($_SESSION['mode'] === 'dark') ? 'stylesheetD.css' : 'stylesheetL.css'; ?>">
     <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
-    <link rel="icon" type="image/x-icon" href="images/navigation-bar/fav.png">
+    <link rel="icon" type="image/x-icon" href="assets/images/navigation-bar/fav.png">
 </head>
 
 <body>
