@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cafeoui.css">
+    <link rel="stylesheet" href="cafeoui.css" type="text/css">
     <title>Menu Page</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
   <div class="top-left">
     
     <div class="tea-section">
-      <img src="images/menu/tea.png" alt="Green Tea" class="menu-img">
+      <img src="images/asset/tea.png" alt="Green Tea" class="menu-img">
       <span class="side-text">Green tea</span>
       <h1>Tea</h1>
       <ul>
@@ -52,11 +52,11 @@
   <!-- Right-side images -->
   <div class="right-section">
     <div class="drink-item">
-      <img src="images/menu/lemonade.png" alt="Homemade Lemonade" class="menu-img">
+      <img src="images/asset/lemonade.png" alt="Homemade Lemonade" class="menu-img">
       <span class="side-text-vertical">Home-made lemonade</span>
     </div>
     <div class="drink-item bottom">
-      <img src="images/menu/cappuccino.png" alt="Cappuccino" class="menu-img">
+      <img src="images/asset/cappuccino.png" alt="Cappuccino" class="menu-img">
       <span class="side-text-vertical">Cappuccino</span>
     </div>
   </div>
@@ -64,16 +64,13 @@
 
 <!----  Joining div-->
 
-
 <div class="section-divider"></div>
 
 <!--Complection of divider-->
 
-
-
  <div class="menu-wrapper">
   <div class="image-container top">
-    <img src="images/menu/croissant.png" alt="Plain Croissant">
+    <img src="images/asset/croissant.png" alt="Plain Croissant">
     <span class="side-text left-text">Plain Croissant</span>
   </div>
 
@@ -118,7 +115,7 @@
   </div>
 
   <div class="image-container bottom">
-    <img src="images/menu/merengue.png" alt="Macarons Vanilla Strawberry">
+    <img src="images/asset/merengue.png" alt="Macarons Vanilla Strawberry">
     <span class="side-text left-text">Macarons (Vanilla, Strawberry)</span>
   </div>
 
@@ -126,8 +123,6 @@
     <button>download menu</button>
   </div>
 </div>
-
-
 
 </body>
 </html>
