@@ -130,10 +130,10 @@ unset($lang_options[$current_lang]);
             <h1>Nous faisons toujours de notre mieux pour laisser une bonne impression!</h1>
         </div>
         <div class="gallery-grid">
-            <img class="img-croissant" src="images/impression/small_croissant.png" alt="croissant">
-            <img class="img-tea-powder" src="images/impression/small_tea_powder.png" alt="tea-powder">
-            <img class="img-coffee" src="images/impression/small_coffee.png" alt="coffee">
-            <img class="img-tea" src="images/impression/small_tea.png" alt="tea">
+            <img class="img-croissant" src="assets/images/impression/small_croissant.png" alt="croissant">
+            <img class="img-tea-powder" src="assets/images/impression/small_tea_powder.png" alt="tea-powder">
+            <img class="img-coffee" src="assets/images/impression/small_coffee.png" alt="coffee">
+            <img class="img-tea" src="assets/images/impression/small_tea.png" alt="tea">
             
             <div class="impression-player">
                 <iframe style="border-radius:12px;" 
