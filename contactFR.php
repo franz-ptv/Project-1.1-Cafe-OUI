@@ -211,13 +211,13 @@ unset($lang_options[$current_lang]);
                 <h3>Adress: Van Schaikweg 94, 7811KL Emmen</h3>
                 <h4>Working hours:</h4>
                 <ul>
-                <li>Mon - Close</li>
-                <li>Tues - 09:00 - 17:00</li>
-                <li>Wed - 09:00 - 17:00</li>
-                <li>Thurs - 09:00 - 17:00</li>
-                <li>Fri - 09:00 - 17:00</li>
-                <li>Sat - 09:00 - 17:00</li>
-                <li>Sun - 09:00 - 17:00</li>
+                    <li>Mon - Close</li>
+                    <li>Tues - 09:00 - 17:00</li>
+                    <li>Wed - 09:00 - 17:00</li>
+                    <li>Thurs - 09:00 - 17:00</li>
+                    <li>Fri - 09:00 - 17:00</li>
+                    <li>Sat - 09:00 - 17:00</li>
+                    <li>Sun - 09:00 - 17:00</li>
                 </ul>
             </div>
 

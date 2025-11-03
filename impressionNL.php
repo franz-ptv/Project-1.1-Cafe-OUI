@@ -48,7 +48,7 @@ unset($lang_options[$current_lang]);
     <link rel="stylesheet" href="css/stylesheet.css"> -->
     <link rel="stylesheet" href="css/<?php echo ($_SESSION['mode'] === 'dark') ? 'stylesheetD.css' : 'stylesheetL.css'; ?>">
     <link rel="icon" type="image/x-icon" href="assets/images/navigation-bar/fav.png">
-    <title>impressie</title>
+    <title>Impressie</title>
 </head>
 <body class="body_impression">
 
@@ -60,7 +60,7 @@ unset($lang_options[$current_lang]);
     <a href="indexNL.php">Home</a>
     <a href="menuNL.php">Menu</a>
     <a href="about_usNL.php">Over ons</a>
-    <a href="impressionNL.php">Impresse</a>
+    <a href="impressionNL.php">Impressie</a>
     <a href="contactNL.php">Contact</a>
  </div>
  <div class="navactions">

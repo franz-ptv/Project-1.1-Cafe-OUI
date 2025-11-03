@@ -62,7 +62,7 @@ unset($lang_options[$current_lang]);
     <a href="indexNL.php">Home</a>
     <a href="menuNL.php">Menu</a>
     <a href="about_usNL.php">Over ons</a>
-    <a href="impressionNL.php">Impresse</a>
+    <a href="impressionNL.php">Impressie</a>
     <a href="contactNL.php">Contact</a>
  </div>
  <div class="navactions">

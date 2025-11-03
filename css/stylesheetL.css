@@ -1285,7 +1285,7 @@ input::placeholder, textarea::placeholder
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 100vh;
 }
 
 .error h1
@@ -1305,8 +1305,8 @@ input::placeholder, textarea::placeholder
 
 .main-error
 {
-    background-image: url("assets/images/404/illustrations_yellow_croissant.png");
-    background-size: cover;
+    background-image: url("../assets/images/404/illustrations_yellow_croissant.png");
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #85e9ff;
