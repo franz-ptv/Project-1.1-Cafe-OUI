@@ -72,43 +72,43 @@ unset($lang_options[$current_lang]);
     </head>
     <body class="contact-body">
         
-<nav class="navbar">
- <div class="navlogo">
-    <a class="logo" href="indexFR.php">OUI</a>
- </div>
- <div class="navlinks">
-    <a href="indexFR.php">Home</a>
-    <a href="menuFR.php">Menu</a>
-    <a href="about_usFR.php">À propos</a>
-    <a href="impressionFR.php">Impression</a>
-    <a href="contactFR.php">Contact</a>
- </div>
- <div class="navactions">
-    <div class="language-dropdown">
-    <button class="lang-select">
-        <img src="assets/images/flags/<?php echo $current_lang; ?>.png" alt="<?php echo $current_lang_text; ?> Flag" class="flag-icon">
-        <?php echo $current_lang_text; ?>
-        <span class="arrow">&#9662;</span>
-    </button>
-    <ul class="lang-menu">
-        <?php foreach($lang_options as $lang_code => $lang): ?>
-            <li>
-                <a href="<?php echo $lang['page']; ?>">
-                    <img src="assets/images/flags/<?php echo $lang_code; ?>.png" alt="<?php echo $lang['text']; ?> Flag" class="flag-icon">
-                    <?php echo $lang['text']; ?>
-                </a>
-            </li>
-        <?php endforeach; ?>
-    </ul>
-</div>
+        <nav class="navbar">
+            <div class="navlogo">
+                <a class="logo" href="indexFR.php">OUI</a>
+            </div>
+            <div class="navlinks">
+                <a href="indexFR.php">Home</a>
+                <a href="menuFR.php">Menu</a>
+                <a href="about_usFR.php">À propos</a>
+                <a href="impressionFR.php">Impression</a>
+                <a href="contactFR.php">Contact</a>
+            </div>
+            <div class="navactions">
+                <div class="language-dropdown">
+                <button class="lang-select">
+                    <img src="assets/images/flags/<?php echo $current_lang; ?>.png" alt="<?php echo $current_lang_text; ?> Flag" class="flag-icon">
+                    <?php echo $current_lang_text; ?>
+                    <span class="arrow">&#9662;</span>
+                </button>
+                <ul class="lang-menu">
+                    <?php foreach($lang_options as $lang_code => $lang): ?>
+                        <li>
+                            <a href="<?php echo $lang['page']; ?>">
+                                <img src="assets/images/flags/<?php echo $lang_code; ?>.png" alt="<?php echo $lang['text']; ?> Flag" class="flag-icon">
+                                <?php echo $lang['text']; ?>
+                            </a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
 
-    <form method="POST" style="display:inline;">
-        <button type="submit" name="toggle_mode">
-            Cliquer pour <?php echo ($_SESSION['mode'] === 'dark') ? 'Light' : 'Dark'; ?> Mode
-        </button>
-    </form>
- </div>
-</nav>
+                <form method="POST" style="display:inline;">
+                    <button type="submit" name="toggle_mode">
+                        Cliquer pour <?php echo ($_SESSION['mode'] === 'dark') ? 'Light' : 'Dark'; ?> Mode
+                    </button>
+                </form>
+            </div>
+        </nav>
 
         <div class="main">
             <div class="info-left">
