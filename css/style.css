@@ -1,17 +1,15 @@
 @font-face 
 {
-    font-family: 'CirularStd-medium';
-    src: url('./assets/fonts/CirularStd-medium.otf')format('opentype');
+    font-family: 'CircularStd-medium';
+    src: url('./assets/fonts/CircularStd-medium.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
-body
+.contact-body
 {
-    display: flex;
-    justify-content: center;
     background-color: #00657C;
-    font-family: 'CirularStd-medium', sans-serif;
+    font-family: 'CircularStd-medium', sans-serif;
     color: white;
 }
 
@@ -20,6 +18,9 @@ body
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 20px auto;
 }
 
 .info-left
@@ -30,9 +31,17 @@ body
     padding: 10px;
 }
 
+.icon 
+{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
 .form-right
 {
-    background-image: url('./assets/photos/pexels-chevanon-photography-302902.jpg');
+    background-image: url('./assets/images/contact-us/pexels-chevanon-photography-302902.png');
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -42,22 +51,31 @@ body
     padding: 10px;
 }
 
-a:link
+.form-error
+{
+    color: #95261F;
+}
+.form-success
+{
+    color: greenyellow;
+}
+
+.link a:link
 {
     color: white;
     text-decoration: none;
 }
-a:visited
+.link a:visited
 {
     color: gray;
     text-decoration: none;
 }
-a:hover
+.link a:hover
 {
     color: #95261F;
     text-decoration: underline;
 }
-a:active
+.link a:active
 {
     text-decoration: underline;
 }
@@ -86,6 +104,8 @@ input::placeholder, textarea::placeholder
 
 .error
 {
+    font-family: 'CircularStd-medium';
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,6 +116,7 @@ input::placeholder, textarea::placeholder
 .error h1
 {
     font-size: 75px;
+    font-family: 'CircularStd-medium';
 }
 
 .error a
@@ -110,10 +131,11 @@ input::placeholder, textarea::placeholder
 
 .main-error
 {
-    background-image: url("assets/photos/illustrations_red_croissant.png");
+    background-image: url("assets/images/404/illustrations_red_croissant.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: #00657C;
 }
 
 @media (max-width: 768px) 
@@ -140,7 +162,7 @@ input::placeholder, textarea::placeholder
         height: 200px;
     }
 
-    ul 
+    .opening-hours ul 
     {
         display: flex;
         flex-direction: column;
@@ -148,7 +170,7 @@ input::placeholder, textarea::placeholder
         align-items: center;
     }
 
-    ul li 
+    .opening-hours ul li
     {
         margin: 5px 0;
     }
@@ -165,4 +187,65 @@ input::placeholder, textarea::placeholder
         width: 45%;
         margin: 5px;
     }
+}
+
+/* NavBar Language button css*/
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: sans-serif;
+}
+.lang-select {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    color: #ede5bb;
+    padding: 5px 10px;
+}
+.flag-icon {
+    width: 24px;
+    height: 16px;
+    object-fit: cover;
+    display: inline-block;
+}
+.arrow {
+    font-size: 0.6rem;
+    user-select: none;
+}
+.lang-menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(21, 100, 123);
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    border-radius: 8px;
+    min-width: 90px;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+.lang-menu li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    color: #ede5bb;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.lang-menu li a:hover {
+    background-color: rgb(16, 75, 93);
+    color: white;
+}
+.language-dropdown:hover .lang-menu,
+.language-dropdown:focus-within .lang-menu {
+    display: block;
+}
+.lang-select:focus {
+    outline: none;
 }

@@ -138,7 +138,7 @@ unset($lang_options[$current_lang]);
         </div>
       </div>
 
-      <div class = "box3">
+      <div class ="box3">
         <h3>Adress: Van Schaikweg 94, 7811KL Emmen</h3>
         <h4>Working hours:</h4>
         <ul>

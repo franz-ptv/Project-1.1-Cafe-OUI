@@ -1,0 +1,827 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: sans-serif;
+}
+
+.lang-select {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    color: #ede5bb;
+    padding: 5px 10px;
+}
+
+.flag-icon {
+    width: 24px;
+    height: 16px;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.arrow {
+    font-size: 0.6rem;
+    user-select: none;
+}
+
+.lang-menu {
+    display: none; /* hidden by default */
+    position: absolute;
+    background-color: rgb(21, 100, 123);
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    border-radius: 8px;
+    min-width: 90px;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+.lang-menu li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    color: #ede5bb;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.lang-menu li a:hover {
+    background-color: rgb(16, 75, 93);
+    color: white;
+}
+
+/* Show dropdown on button focus or dropdown hovered */
+.language-dropdown:hover .lang-menu,
+.language-dropdown:focus-within .lang-menu {
+    display: block;
+}
+
+/* Optional: Remove default button focus outline but keep accessibility */
+.lang-select:focus {
+    outline: none;
+}
+
+
+
+/* Here starts the NavBar*/
+
+.navbar {
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(21, 100, 123);
+    padding: 0 20px;
+    margin: 0;
+    font-size: 130%;
+    flex-wrap: wrap;
+}
+.navlogo {
+    align-self: flex-start;
+}
+.logo {
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(237, 229, 187);
+    text-decoration: none;
+}
+.logo:hover{
+    background-color: rgb(16, 75, 93) ;
+}
+.navlinks {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+.navlinks a {
+    color: rgb(237, 229, 187);
+    text-decoration: none;
+    padding: 12px 15px;
+    display: block;
+    text-align: center;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+.navlinks a:hover {
+    background-color: rgb(16, 75, 93);
+}
+.navactions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.navactions button {
+    padding: 8px 16px;
+    font-size: 95%;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+@media (max-width: 900px){
+    .navbar{
+        font-size: 115%;
+    }
+    .logo{
+        font-size: 40px;
+    }
+    .navlinks a{
+        padding: 10px 12px;
+    }
+    .navactions button{
+        padding: 7px 12px;
+    }
+}
+@media (max-width: 600px){
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 110%;
+  }
+  .navlogo {
+    align-self: center;
+    margin-bottom: 6px;
+  }
+  .navlinks {
+    flex-direction: column;
+    width: 100%;
+    gap: 6px;
+  }
+  .navlinks a {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .navactions {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+  }
+  .navactions button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+  }
+}
+
+
+/* Here starts the hero section of the site (blue part)
+*/
+
+.firstimg{
+    /*width: 100vw;*/
+    height: 100vh;
+    background-image: url("../assets/images/home-page/CafeBlue.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.FirstText{
+    display: inline-block;
+    color: rgb(237, 229, 187);
+    font-size: 15em;
+    font-family:'Caveat';
+    position:relative;
+    align-self: center;
+    padding-bottom: 10%;
+}
+
+.SecondText{
+    font-size: 3em;
+    font-family: 'Caveat';
+    color: rgb(237, 229, 187);
+    position: absolute;
+    align-items: center;
+    align-self: center;
+    padding-top: 10%;
+}
+
+.line_blue{
+margin-top: 4px;
+width: 100vw;
+height: 2px;
+background-color: rgb(21, 100, 123);
+position: absolute;
+}
+
+.line_beige{
+margin-top: 4px;
+width: 100vw;
+height: 2px;
+background-color: rgb(237, 229, 187);
+}
+
+/*
+Here starts the second part (beige part)
+*/
+.cest{
+    font-size: 3em;
+    color: rgb(21, 100, 123);
+}
+
+.menu_button{
+    display: inline-block;
+    width: 300px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 200%;
+    background-color: rgb(21, 100, 123);
+    color: white;
+    border-radius: 25px;
+    text-decoration: underline;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.5s;
+}
+
+.menu_button:hover{
+    background-color: rgba(21, 99, 123, 0.85);
+    width: 290px;
+    height: 75px;
+    border-radius: 35px;
+}
+
+.delicious{
+    font-size: 2.5em;
+    color: rgb(21, 100, 123);
+}
+
+.secondimg {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/images/home-page/InteiorBeige.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: grid;
+    grid-template-columns: repeat(50, 1fr);
+    grid-template-rows: repeat(50, 1fr);
+    position: relative;
+    gap: 0;
+}
+
+
+.mid_screen {
+    grid-column: 21 / 32;
+    grid-row: 12 / 35;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+
+.croissant_pic {
+    grid-column: 34 / 48;
+    grid-row: 3 / 6;
+    justify-self: end;
+    align-self: start;
+    width: 100%;
+    border-radius: 50%;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.croissant_pic:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgb(0, 0, 0, 0.2);
+}
+
+.treat_pic {
+    grid-column: 5 / 20;
+    grid-row: 19/ 35;
+    justify-self: start;
+    align-self: start;
+    width: 95%;
+    border-radius: 50%;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.treat_pic:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgb(0, 0, 0, 0.2);
+}
+
+.croissant_png {
+    grid-column: 9 / 25;
+    grid-row: 7 / 11;
+    justify-self: start;
+    align-self: center;
+    width: 90%;
+    max-width: 180px;
+    transition: transform 0.4s ease;
+}
+.croissant_png:hover{
+    transform: scale(1.15);
+}
+
+.treat_png {
+    grid-column: 28 / 45;
+    grid-row: 40 / 45;
+    justify-self: end;
+    align-self: center;
+    width: 90%;
+    max-width: 180px;
+    transition: transform 0.4s ease;
+}
+.treat_png:hover{
+    transform: scale(1.15);
+}
+
+.tea_png {
+    grid-column: 26 / 36;
+    grid-row: 1 / 3;
+    justify-self: center;
+    align-self: start;
+    width: 70%;
+    max-width: 130px;
+    transition: transform 0.4s ease;
+}
+.tea_png:hover{
+    transform: scale(1.15);
+}
+
+.coffee_png {
+    grid-column: 20 / 26;
+    grid-row: 37 / 42;
+    justify-self: center;
+    align-self: end;
+    width: 70%;
+    max-width: 130px;
+    transition: transform 0.4s ease;
+}
+.coffee_png:hover{
+    transform: scale(1.15);
+}
+
+/* RESPONSIVE: Responsive grid adjustments */
+@media (max-width: 1300px){
+        .FirstText{
+        display: inline-block;
+        color: rgb(237, 229, 187);
+        font-size: 13em;
+        font-family:'Caveat';
+        position:relative;
+        align-self: center;
+        padding-bottom: 20%;
+    }
+}
+@media (max-width: 900px) { /* NOT READY NEED NAVBAR*/
+    .FirstText{
+        display: inline-block;
+        color: rgb(237, 229, 187);
+        font-size: 10em;
+        font-family:'Caveat';
+        position:relative;
+        align-self: center;
+        padding-bottom: 20%;
+    }
+    .secondimg {
+        grid-template-columns: repeat(50, 1fr);
+        grid-template-rows: repeat(50, 1fr);
+    }
+    .mid_screen {
+        grid-column: 21 / 32;
+        grid-row: 12 / 35;
+        padding: 0 10px;
+    }
+    .croissant_pic {
+        grid-column: 34 / 48;
+        grid-row: 4 / 7;
+        justify-self: end;
+        align-self: start;
+        width: 100%;
+    }
+    .treat_pic {
+        grid-column: 5 / 20;
+        grid-row: -7/ 30;
+        justify-self: start;
+        align-self: start;
+        width: 95%;
+    }
+    .croissant_png {
+        grid-column: 7 / 17;
+        grid-row: 14 / 18;
+        justify-self: start;
+        align-self: center;
+        width: 90%;
+        max-width: 180px;
+    }
+    .treat_png {
+        grid-column: 29 / 46;
+        grid-row: 35 / 40;
+        justify-self: end;
+        align-self: center;
+        width: 80%;
+        max-width: 180px;
+    }
+    .tea_png {
+        grid-column: 26 / 36;
+        grid-row: 4 / 6;
+        justify-self: center;
+        align-self: start;
+        width: 50%;
+        max-width: 130px;
+    }
+    .coffee_png {
+        grid-column: 20 / 26;
+        grid-row: -5 / 30;
+        justify-self: center;
+        align-self: end;
+        width: 100%;
+        max-width: 130px;
+    }
+
+}
+
+@media (max-width: 700px){ /*READY*/
+
+    .FirstText{
+        display: inline-block;
+        color: rgb(237, 229, 187);
+        font-size: 9em;
+        font-family:'Caveat';
+        position:relative;
+        align-self: center;
+        padding-bottom: 20%;
+    }
+    .SecondText{
+        font-size: 200%;
+        font-family: 'Caveat';
+        color: rgb(237, 229, 187);
+        position: absolute;
+        align-items: center;
+        align-self: center;
+        padding-top: 10%;
+    }
+
+
+}
+
+@media (max-width: 600px) { /* READY*/
+    .FirstText{
+        display: inline-block;
+        color: rgb(237, 229, 187);
+        font-size: 5em;
+        font-family:'Caveat';
+        position:relative;
+        align-self: center;
+        padding-bottom: 20%;
+    }
+    .SecondText{
+        font-size: 150%;
+        font-family: 'Caveat';
+        color: rgb(237, 229, 187);
+        position: absolute;
+        align-items: center;
+        align-self: center;
+        padding-top: 10%;
+    }
+
+    .secondimg {
+        grid-template-columns: repeat(50, 1fr);
+        grid-template-rows: repeat(50, 1fr);
+    }
+    .mid_screen {
+        grid-column: 21 / 32;
+        grid-row: 12 / 35;
+        padding: 0 10px;
+    }
+    .croissant_pic {
+        grid-column: 34 / 48;
+        grid-row: 4 / 7;
+        justify-self: end;
+        align-self: start;
+        width: 100%;
+    }
+    .treat_pic {
+        grid-column: 5 / 20;
+        grid-row: -7/ 30;
+        justify-self: start;
+        align-self: start;
+        width: 95%;
+    }
+    .croissant_png {
+        grid-column: 7 / 17;
+        grid-row: 14 / 18;
+        justify-self: start;
+        align-self: center;
+        width: 90%;
+        max-width: 180px;
+    }
+    .treat_png {
+        grid-column: 29 / 46;
+        grid-row: 35 / 40;
+        justify-self: end;
+        align-self: center;
+        width: 80%;
+        max-width: 180px;
+    }
+    .tea_png {
+        grid-column: 26 / 36;
+        grid-row: 4 / 6;
+        justify-self: center;
+        align-self: start;
+        width: 50%;
+        max-width: 130px;
+    }
+    .coffee_png {
+        grid-column: 20 / 26;
+        grid-row: -5 / 30;
+        justify-self: center;
+        align-self: end;
+        width: 100%;
+        max-width: 130px;
+    }
+}
+
+@media (max-width: 400px) { /*READY*/
+    .secondimg {
+        grid-template-columns: repeat(50, 1fr);
+        grid-template-rows: repeat(50, 1fr);
+    }
+    .mid_screen {
+        grid-column: 21 / 32;
+        grid-row: 12 / 35;
+        padding: 0 10px;
+    }
+    .croissant_pic {
+        grid-column: 30 / 44;
+        grid-row: 8 / 11;
+        justify-self: end;
+        align-self: start;
+        width: 100%;
+    }
+    .treat_pic {
+        grid-column: 5 / 20;
+        grid-row: -10/ 35;
+        justify-self: start;
+        align-self: start;
+        width: 95%;
+    }
+    .croissant_png {
+        grid-column: 5 / 15;
+        grid-row: 8 / 12;
+        justify-self: start;
+        align-self: center;
+        width: 150%;
+        max-width: 180px;
+    }
+    .treat_png {
+        grid-column: 29 / 46;
+        grid-row: 35 / 40;
+        justify-self: end;
+        align-self: center;
+        width: 80%;
+        max-width: 180px;
+    }
+    .tea_png {
+        grid-column: 19 / 29;
+        grid-row: 3 / 5;
+        justify-self: center;
+        align-self: start;
+        width: 100%;
+        max-width: 130px;
+    }
+    .coffee_png {
+        grid-column: 20 / 26;
+        grid-row: -5 / 30;
+        justify-self: center;
+        align-self: end;
+        width: 200%;
+        max-width: 130px;
+    }
+    .cest{
+        grid-column: 12/42;
+        grid-row: 14/18;
+        font-size: 200%;
+        color: rgb(21, 100, 123);
+    }
+    .menu_button{
+        width: 150px;
+        height: 65px;
+        font-size: 120%;
+        background-color: rgb(21, 100, 123);
+        color: white;
+        border-radius: 25px;
+        text-decoration: underline;
+        border: 0cap;
+        transition: all 0.5s;
+    }
+    .menu_button:hover{
+        background-color: rgba(21, 99, 123, 0.85);
+        width: 310px;
+    }
+    .delicious{
+        font-size: 150%;
+        color: rgb(21, 100, 123);
+    }
+}
+@media (max-width: 360px){ /* READY*/
+    .SecondText{
+        font-size: 120%;
+        font-family: 'Caveat';
+        color: rgb(237, 229, 187);
+        position: absolute;
+        align-items: center;
+        align-self: center;
+        padding-top: 10%;
+    }
+}
+
+
+
+/*
+Here starts the third part (red part)
+*/
+.textbox{
+    margin: 0%;
+    padding: 0%;
+    /*width: 100vw;*/
+    height: 200px;
+    background-color: rgb(149, 38, 31);
+}
+
+.link_exh{
+display:flex ;
+justify-content: center;
+align-items:center ;
+padding-top: 10px;
+font-size: 2em;
+color: white;
+text-decoration: underline;
+}
+
+.pared{
+display:flex ;
+justify-content: center;
+align-items:center ;
+font-size: 2em;
+color: white;
+}
+
+/* Here starts the footer part
+*/
+
+.footer{
+    width: 100%;
+}
+
+.footer_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgba(21, 99, 123);
+    width: auto;
+    height: 250px;
+}
+
+/* This is the first part of the footer*/
+
+.box1{
+    background-color: rgb(21, 100, 123);
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 1.5rem;
+    gap: 18px;
+    padding-left: 50px;
+    padding-top: 45px;
+}
+.footer_links_row{
+    margin-top: 20px;
+    display: flex;
+    gap: 32px;
+}
+.box1 a {
+  color: #fff;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  position: relative;
+  color: #ffffff;
+}
+.box1 a:hover{
+    color:  rgb(237, 229, 187);
+}
+
+.box1 a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1.5px;
+    width: 0;
+    background-color: #fff;
+    text-align: right;
+    opacity: 0;
+    transition: width 0.7s ease, opacity 0.5s ease;
+}
+
+.box1 a:hover::after{
+    width: 100%;
+    opacity: 1;
+}
+
+/*This is the second part of the footer*/
+
+.box2{
+    background-color: rgb(21, 100, 123);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.logo_footer{
+    font-size: 4.7rem;
+    justify-self:center ;
+    color: rgb(237, 229, 187);
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+.logo_footer:hover{
+    color: rgb(173, 164, 119);
+}
+
+.social_icons{
+
+    display: flex;
+    gap: 18px;
+    margin-top: 14px;
+    align-items: center;
+
+}
+.social_icons img{
+    width: 50px;
+    height: 50px;
+}
+.social_icons a{
+    transition: all 0.35s;
+}
+.social_icons a:hover{
+    transform: scale(1.15);
+    opacity: 2;
+}
+
+/* This is the third part of the footer*/
+
+.box3{
+    background-color: rgb(21, 100, 123);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.box3 h3, .box3 h4{
+    margin: 8px 0 0 0;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.box3 ul{
+    list-style: none;
+    margin: 10px 0 0 0;
+    color: #fff;
+}
+
+.box3 ul li{
+    font-size: 1.1rem;
+    padding: 0.5px 0;
+}
+
+/* responsive adjustments for the footer*/
+@media (max-width: 900px) {
+  .footer_container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .box1, .box2, .box3 {
+    align-items: center;
+    justify-content: center;
+  }
+  .footer_links_row {
+    justify-content: center;
+  }
+}

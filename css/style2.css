@@ -1,0 +1,241 @@
+@font-face 
+{
+    font-family: 'CircularStd-medium';
+    src: url('./assets/fonts/CircularStd-medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.contact-body
+{
+    background-color: #85e9ff;
+    font-family: 'CircularStd-medium', sans-serif;
+    color: white;
+}
+
+.main
+{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.info-left
+{
+    background-color: #112a45;
+    border: 10px solid #e1736b;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.icon 
+{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.form-right
+{
+    background-image: url('./assets/images/contact-us/pexels-chevanon-photography-302902.png');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    border: 10px solid #e1736b;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.link a:link
+{
+    color: white;
+    text-decoration: none;
+}
+.link a:visited
+{
+    color: gray;
+    text-decoration: none;
+}
+.link a:hover
+{
+    color: #e1736b;
+    text-decoration: underline;
+}
+.link a:active
+{
+    text-decoration: underline;
+}
+
+form
+{
+    display: grid;
+
+}
+
+input, textarea
+{
+    margin: 15px 0;
+    resize: none;
+    border: 5px solid #e1736b;
+    border-radius: 10px;
+}
+
+
+input::placeholder, textarea::placeholder
+{
+    font-family: 'CirularStd-medium';
+    color: black;
+    opacity: 0.8;
+}
+
+.error
+{
+    font-family: 'CircularStd-medium';
+    color: #443b12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.error h1
+{
+    font-size: 75px;
+}
+
+.error a
+{
+    background-color: #e1736b;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.main-error
+{
+    background-image: url("assets/images/404/illustrations_yellow_croissant.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #85e9ff;
+}
+
+@media (max-width: 768px) 
+{
+    .main 
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+        justify-items: center; 
+    }
+
+    .info-left, .form-right 
+    {
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+    }
+
+    iframe 
+    {
+        width: 100%;
+        height: 200px;
+    }
+
+    .opening-hours ul 
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    .opening-hours ul li
+    {
+        margin: 5px 0;
+    }
+
+    input[type="text"], input[type="email"], textarea 
+    {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 1rem;
+    }
+
+    input[type="submit"], input[type="reset"] 
+    {
+        width: 45%;
+        margin: 5px;
+    }
+}
+
+/* NavBar Language button css*/
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: sans-serif;
+}
+.lang-select {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    color: #ede5bb;
+    padding: 5px 10px;
+}
+.flag-icon {
+    width: 24px;
+    height: 16px;
+    object-fit: cover;
+    display: inline-block;
+}
+.arrow {
+    font-size: 0.6rem;
+    user-select: none;
+}
+.lang-menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(21, 100, 123);
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    border-radius: 8px;
+    min-width: 90px;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+.lang-menu li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    color: #ede5bb;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.lang-menu li a:hover {
+    background-color: rgb(16, 75, 93);
+    color: white;
+}
+.language-dropdown:hover .lang-menu,
+.language-dropdown:focus-within .lang-menu {
+    display: block;
+}
+.lang-select:focus {
+    outline: none;
+}

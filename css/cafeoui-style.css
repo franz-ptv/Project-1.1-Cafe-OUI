@@ -427,6 +427,23 @@ ul {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
 /* Here starts the navbar css
 */
 .logo{
@@ -575,13 +592,22 @@ ul {
   margin-top: auto;
 }
 
+
+
+
 /* insert divider from here*/
+
+
 .section-divider {
     height: 70px;
     width: 100%;
 }
 
 /* close of divider*/
+
+
+
+
 
 .menu-wrapper {
   display: grid;
@@ -674,7 +700,8 @@ ul {
 }
 
 .button-container button {
-  background-color: #ede5bb;
+  background-color: #d1b29c;
+  color: #000;
   font-weight: 600;
   font-size: 1rem;
   padding: 0.5rem 2.5rem;
@@ -904,11 +931,3 @@ ul {
 .lang-select:focus {
     outline: none;
 }
-
-
-
-
-
-
-
-
