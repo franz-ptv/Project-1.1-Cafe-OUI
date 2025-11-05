@@ -1,4 +1,18 @@
 <?php
+session_start(); // Start or resume the session
+
+// Default: dark mode on first visit
+if (!isset($_SESSION['mode'])) {
+    $_SESSION['mode'] = 'dark';
+}
+
+// Handle toggle POST form
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['toggle_mode'])) {
+    $_SESSION['mode'] = ($_SESSION['mode'] === 'dark') ? 'light' : 'dark';
+}
+?>
+
+<?php
 $current_file = basename($_SERVER['PHP_SELF']);
 
 switch ($current_file) {
@@ -30,8 +44,9 @@ unset($lang_options[$current_lang]);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/impression_style.css">
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <!-- <link rel="stylesheet" href="css/impression_style.css">
+    <link rel="stylesheet" href="css/stylesheet.css"> -->
+    <link rel="stylesheet" href="css/<?php echo ($_SESSION['mode'] === 'dark') ? 'stylesheetD.css' : 'stylesheetL.css'; ?>">
     <link rel="icon" type="image/x-icon" href="assets/images/navigation-bar/fav.png">
     <title>Impressie</title>
 </head>
@@ -67,7 +82,11 @@ unset($lang_options[$current_lang]);
     </ul>
 </div>
 
-    <button>Dark/Light</button>
+    <form method="POST" style="display:inline;">
+        <button type="submit" name="toggle_mode">
+            Cliquer pour <?php echo ($_SESSION['mode'] === 'dark') ? 'Light' : 'Dark'; ?> Mode
+        </button>
+    </form>
  </div>
 </nav>
 
@@ -111,10 +130,10 @@ unset($lang_options[$current_lang]);
             <h1>Nous faisons toujours de notre mieux pour laisser une bonne impression!</h1>
         </div>
         <div class="gallery-grid">
-            <img class="img-croissant" src="images/impression/small_croissant.png" alt="croissant">
-            <img class="img-tea-powder" src="images/impression/small_tea_powder.png" alt="tea-powder">
-            <img class="img-coffee" src="images/impression/small_coffee.png" alt="coffee">
-            <img class="img-tea" src="images/impression/small_tea.png" alt="tea">
+            <img class="img-croissant" src="assets/images/impression/small_croissant.png" alt="croissant">
+            <img class="img-tea-powder" src="assets/images/impression/small_tea_powder.png" alt="tea-powder">
+            <img class="img-coffee" src="assets/images/impression/small_coffee.png" alt="coffee">
+            <img class="img-tea" src="assets/images/impression/small_tea.png" alt="tea">
             
             <div class="impression-player">
                 <iframe style="border-radius:12px;" 

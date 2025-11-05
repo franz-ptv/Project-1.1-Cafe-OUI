@@ -1,4 +1,18 @@
 <?php
+session_start(); // Start or resume the session
+
+// Default: dark mode on first visit
+if (!isset($_SESSION['mode'])) {
+    $_SESSION['mode'] = 'dark';
+}
+
+// Handle toggle POST form
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['toggle_mode'])) {
+    $_SESSION['mode'] = ($_SESSION['mode'] === 'dark') ? 'light' : 'dark';
+}
+?>
+
+<?php
 $current_file = basename($_SERVER['PHP_SELF']);
 
 switch ($current_file) {
@@ -31,12 +45,14 @@ unset($lang_options[$current_lang]);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalabe=no ">
     <title>Café OUI</title>
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <!-- <link rel="stylesheet" href="css/stylesheet.css"> -->
+    <link rel="stylesheet" href="css/<?php echo ($_SESSION['mode'] === 'dark') ? 'stylesheetD.css' : 'stylesheetL.css'; ?>">
     <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
-    <link rel="icon" type="image/x-icon" href="images/navigation-bar/fav.png">
+    <link rel="icon" type="image/x-icon" href="assets/images/navigation-bar/fav.png">
 </head>
 
 <body>
+<div class = "body_main_page">
 
 <nav class="navbar">
  <div class="navlogo">
@@ -46,7 +62,7 @@ unset($lang_options[$current_lang]);
     <a href="indexNL.php">Home</a>
     <a href="menuNL.php">Menu</a>
     <a href="about_usNL.php">Over ons</a>
-    <a href="impressionNL.php">Impresse</a>
+    <a href="impressionNL.php">Impressie</a>
     <a href="contactNL.php">Contact</a>
  </div>
  <div class="navactions">
@@ -66,9 +82,13 @@ unset($lang_options[$current_lang]);
             </li>
         <?php endforeach; ?>
     </ul>
-</div>
+      </div>
 
-    <button>Dark/Light</button>
+    <form method="POST" style="display:inline;">
+        <button type="submit" name="toggle_mode">
+            Druk voor <?php echo ($_SESSION['mode'] === 'dark') ? 'Light' : 'Dark'; ?> Mode
+        </button>
+    </form>
  </div>
 </nav>
 
@@ -152,5 +172,6 @@ unset($lang_options[$current_lang]);
     </div>
   </footer>
   
+</div>
 </body>
 </html>
