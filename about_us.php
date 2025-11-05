@@ -1,36 +1,93 @@
+<?php
+session_start(); // Start or resume the session
+
+// Default: dark mode on first visit
+if (!isset($_SESSION['mode'])) {
+    $_SESSION['mode'] = 'dark';
+}
+
+// Handle toggle POST form
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['toggle_mode'])) {
+    $_SESSION['mode'] = ($_SESSION['mode'] === 'dark') ? 'light' : 'dark';
+}
+?>
+
+<?php
+$current_file = basename($_SERVER['PHP_SELF']);
+
+switch ($current_file) {
+    case 'about_usFR.php':
+        $current_lang = 'fr';
+        $current_lang_text = 'FR';
+        break;
+    case 'about_usNL.php':
+        $current_lang = 'nl';
+        $current_lang_text = 'NL';
+        break;
+    default:
+        $current_lang = 'en';
+        $current_lang_text = 'EN';
+        break;
+}
+
+$lang_options = [
+    'en' => ['text' => 'EN', 'page' => 'about_us.php'],
+    'fr' => ['text' => 'FR', 'page' => 'about_usFR.php'],
+    'nl' => ['text' => 'NL', 'page' => 'about_usNL.php'],
+];
+
+unset($lang_options[$current_lang]);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/impression_style.css">
-    <link rel="stylesheet" href="stylesheet.css">
+    <!-- <link rel="stylesheet" href="css/impression_style.css">
+    <link rel="stylesheet" href="css/stylesheet.css"> -->
+    <link rel="stylesheet" href="css/<?php echo ($_SESSION['mode'] === 'dark') ? 'stylesheetD.css' : 'stylesheetL.css'; ?>">
     <link rel="icon" type="image/x-icon" href="assets/images/navigation-bar/fav.png">
     <title>About Us</title>
 </head>
 <body class="body_impression">
     
-<nav class = "navbar">
-    <ul class="navbarul">
-
-      <div class="navlogo">
-       <a class = "logo" href="index.php">OUI</a>
-      </div>
-
-      <div>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="menu.php">Menu</a></li>
-        <li><a href="about_us.php">About Us</a></li>
-        <li><a href="impression.php">Impression</a></li>
-        <li><a href="contact.php">Contact us</a></li>
-      </div>
-
-      <div>
-        <button>Language</button>
-        <button>Dark/Light</button>
-      </div>
-
+<nav class="navbar">
+ <div class="navlogo">
+    <a class="logo" href="index.php">OUI</a>
+ </div>
+ <div class="navlinks">
+    <a href="index.php">Home</a>
+    <a href="menu.php">Menu</a>
+    <a href="about_us.php">About Us</a>
+    <a href="impression.php">Impression</a>
+    <a href="contact.php">Contact us</a>
+ </div>
+ <div class="navactions">
+    <div class="language-dropdown">
+    <button class="lang-select">
+        <img src="assets/images/flags/<?php echo $current_lang; ?>.png" alt="<?php echo $current_lang_text; ?> Flag" class="flag-icon">
+        <?php echo $current_lang_text; ?>
+        <span class="arrow">&#9662;</span>
+    </button>
+    <ul class="lang-menu">
+        <?php foreach($lang_options as $lang_code => $lang): ?>
+            <li>
+                <a href="<?php echo $lang['page']; ?>">
+                    <img src="assets/images/flags/<?php echo $lang_code; ?>.png" alt="<?php echo $lang['text']; ?> Flag" class="flag-icon">
+                    <?php echo $lang['text']; ?>
+                </a>
+            </li>
+        <?php endforeach; ?>
     </ul>
+</div>
+
+    <form method="POST" style="display:inline;">
+        <button type="submit" name="toggle_mode">
+            Press for <?php echo ($_SESSION['mode'] === 'dark') ? 'Light' : 'Dark'; ?> Mode
+        </button>
+    </form>
+ </div>
 </nav>
 
     <section class="aboutus">
@@ -109,6 +166,6 @@
       </div>
 
     </div>
-  </footer>    
+  </footer>   
 </body>
 </html>
