@@ -117,7 +117,7 @@ unset($lang_options[$current_lang]);
         The café often hosts small, intimate exhibitions—local artists displaying their canvases beside steaming cups of café au lait. Paintings and sculptures are not only admired but discussed openly over croissants and red wine. It is a place where art breathes, where the gallery meets the aroma of roasted coffee, and where the everyday becomes an exhibition in itself.
         Here, in this French café, the museum is not a building to visit—it is life unfolding, captured in paint, conversation, and the gentle clink of porcelain cups.
     </div>
-    <a class="button" href="impression.php" target="_blank" class="button">
+    <a class="button-about" href="impression.php" target="_blank" class="button">
         Try checking out our exhibition page
     </a>
     </section>

@@ -101,8 +101,8 @@ unset($lang_options[$current_lang]);
     <div class="tea-section">
       <img src="assets/images/menu/tea.png" alt="tea">
       <span class="side-text">Green tea</span>
-      <h1>Thee</h1>
-      <ul>
+      <h1 class="h1-menu">Thee</h1>
+      <ul class="ul-menu">
         <li>Zwarte thee </li>
         <li>Groene thee </li>
         <li>Kruidenthee </li>
@@ -114,8 +114,8 @@ unset($lang_options[$current_lang]);
 
   <!-- Cool drinks section -->
   <div class="center-section">
-    <h1>Koude dranken</h1>
-    <ul>
+    <h1 class="h1-menu">Koude dranken</h1>
+    <ul class="ul-menu">
       <li>Huisgemaakte limonade </li>
       <li>Sinasappelsap </li>
       <li>Appelsap </li>
@@ -123,8 +123,8 @@ unset($lang_options[$current_lang]);
       <li>water</li>
       <li>Bruisend water</li>
     </ul>
-    <h1>>Warme dranken</h1>
-    <ul>
+    <h1 class="h1-menu">>Warme dranken</h1>
+    <ul class="ul-menu">
       <li>Cappuccino</li>
       <li>Latte</li>
       <li>Mocha</li>
@@ -164,8 +164,8 @@ unset($lang_options[$current_lang]);
 
   <div class="content">
     <div class="section croissant">
-      <h1> Pain – Croissant of Petit Pain<</h1>
-      <ul>
+      <h1 class="h1-menu"> Pain – Croissant of Petit Pain<</h1>
+      <ul class="ul-menu">
       <li>Naturel/kaal </li>
       <li>Boter  </li>
       <li>Kruidenthee </li>
@@ -184,8 +184,8 @@ unset($lang_options[$current_lang]);
     </div>
 
     <div class="section sweets">
-      <h1>Zoete snacks </h1>
-      <ul>
+      <h1 class="h1-menu">Zoete snacks </h1>
+      <ul class="ul-menu">
         <li>Macarons (per 3) </li>
         <li>Vanille</li>
         <li>Aardbeien en room </li>

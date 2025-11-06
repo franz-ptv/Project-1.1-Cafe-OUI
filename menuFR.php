@@ -101,8 +101,8 @@ unset($lang_options[$current_lang]);
     <div class="tea-section">
       <img src="assets/images/menu/tea.png" alt="tea">
       <span class="side-text">Green tea</span>
-      <h1>Tea</h1>
-      <ul>
+      <h1 class="h1-menu">Tea</h1>
+      <ul class="ul-menu">
         <li>Thé noir<li>
         <li>Thé vert</li>
         <li>Tisane</li>
@@ -114,8 +114,8 @@ unset($lang_options[$current_lang]);
 
   <!-- Cool drinks section -->
   <div class="center-section">
-    <h1>Cool drinks</h1>
-    <ul>
+    <h1 class="h1-menu">Cool drinks</h1>
+    <ul class="ul-menu">
       <li>Limonade faite a la maison</li>
       <li>Jus d'orange</li>
       <li>jus de pomme</li>
@@ -124,8 +124,8 @@ unset($lang_options[$current_lang]);
       <li>Eau petillante </li>
     </ul>
 
-    <h1>Boison chaute</h1>
-    <ul>
+    <h1 class="h1-menu">Boison chaute</h1>
+    <ul class="ul-menu">
       <li>Cappuccino</li>
       <li>Latte</li>
       <li>Mocha</li>
@@ -162,8 +162,8 @@ unset($lang_options[$current_lang]);
 
   <div class="content">
     <div class="section croissant">
-      <h1>Croissant or Petit Pain</h1>
-      <ul>
+      <h1 class="h1-menu">Croissant or Petit Pain</h1>
+      <ul class="ul-menu">
         <li>Pain – Croissant ou Petit Pain</li>
         <li>Nature/plain</li>
         <li>Beurre</li>
@@ -182,8 +182,8 @@ unset($lang_options[$current_lang]);
     </div>
 
     <div class="section sweets">
-      <h1>Sweets</h1>
-      <ul>
+      <h1 class="h1-menu">Sweets</h1>
+      <ul class="ul-menu">
   <li>Macarons (3 pièces)</li>
   <li>Vanille</li>
   <li>Fraises et crème</li>
