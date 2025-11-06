@@ -58,46 +58,46 @@ unset($lang_options[$current_lang]);
 <div class = "body_main_page">
 
   <nav class="navbar">
-  <div class="navlogo">
-      <a class="logo" href="index.php">OUI</a>
-  </div>
-  <div class="navlinks">
-      <a href="index.php">Home</a>
-      <a href="menu.php">Menu</a>
-      <a href="about_us.php">About Us</a>
-      <a href="impression.php">Impression</a>
-      <a href="contact.php">Contact us</a>
-  </div>
-  <div class="navactions">
-      <div class="language-dropdown">
-      <button class="lang-select">
-          <img src="assets/images/flags/<?php echo $current_lang; ?>.png" alt="<?php echo $current_lang_text; ?> Flag" class="flag-icon">
-          <?php echo $current_lang_text; ?>
-          <span class="arrow">&#9662;</span>
-      </button>
-      <ul class="lang-menu">
-          <?php foreach($lang_options as $lang_code => $lang): ?>
-              <li>
-                  <a href="<?php echo $lang['page']; ?>">
-                      <img src="assets/images/flags/<?php echo $lang_code; ?>.png" alt="<?php echo $lang['text']; ?> Flag" class="flag-icon">
-                      <?php echo $lang['text']; ?>
-                  </a>
-              </li>
-          <?php endforeach; ?>
-      </ul>
-  </div>
+    <div class="navlogo">
+        <a class="logo" href="index.php">OUI</a>
+    </div>
+    <div class="navlinks">
+        <a href="index.php">Home</a>
+        <a href="menu.php">Menu</a>
+        <a href="about_us.php">About Us</a>
+        <a href="impression.php">Impression</a>
+        <a href="contact.php">Contact us</a>
+    </div>
+    <div class="navactions">
+        <div class="language-dropdown">
+          <button class="lang-select">
+              <img src="assets/images/flags/<?php echo $current_lang; ?>.png" alt="<?php echo $current_lang_text; ?> Flag" class="flag-icon">
+              <?php echo $current_lang_text; ?>
+              <span class="arrow">&#9662;</span>
+          </button>
+          <ul class="lang-menu">
+              <?php foreach($lang_options as $lang_code => $lang): ?>
+                  <li>
+                      <a href="<?php echo $lang['page']; ?>">
+                          <img src="assets/images/flags/<?php echo $lang_code; ?>.png" alt="<?php echo $lang['text']; ?> Flag" class="flag-icon">
+                          <?php echo $lang['text']; ?>
+                      </a>
+                  </li>
+              <?php endforeach; ?>
+          </ul>
+      </div>
 
-    <form method="POST" style="display:inline;">
-        <button type="submit" name="toggle_mode">
-            Press for <?php echo ($_SESSION['mode'] === 'dark') ? 'Light' : 'Dark'; ?> Mode
-        </button>
-    </form>
-  </div>
+        <form method="POST" style="display:inline;">
+            <button type="submit" name="toggle_mode">
+                Press for <?php echo ($_SESSION['mode'] === 'dark') ? 'Light' : 'Dark'; ?> Mode
+            </button>
+        </form>
+    </div>
   </nav>
 
   <div class = "firstimg">
       <div class = "FirstText">
-      Café OUI
+        Café OUI
       </div>
 
       <div class = "SecondText">
@@ -113,19 +113,19 @@ unset($lang_options[$current_lang]);
           <a href="menu.php" class = "menu_button" >Visit our menu</a>
         <div><p class="delicious">Certified delicious!</p></div>
       </div>
-  <img src="assets/images/home-page/croissant.png" class="croissant_pic" alt="">
-  <img src="assets/images/home-page/treat.png" class="treat_pic" alt="">
-  <img src="assets/images/home-page/i_croissant.png" class="croissant_png" alt="">
-  <img src="assets/images/home-page/i_treat.png" class="treat_png" alt="">
-  <img src="assets/images/home-page/i_tea.png" class="tea_png" alt="">
-  <img src="assets/images/home-page/i_coffee.png" class="coffee_png" alt="">
+    <img src="assets/images/home-page/croissant.png" class="croissant_pic" alt="">
+    <img src="assets/images/home-page/treat.png" class="treat_pic" alt="">
+    <img src="assets/images/home-page/i_croissant.png" class="croissant_png" alt="">
+    <img src="assets/images/home-page/i_treat.png" class="treat_png" alt="">
+    <img src="assets/images/home-page/i_tea.png" class="tea_png" alt="">
+    <img src="assets/images/home-page/i_coffee.png" class="coffee_png" alt="">
   </div>
 
   <div class = "textbox">
     <div class="line_beige"></div>
     <div class="line_beige"></div>
     <a href="impression.php"><p class="link_exh">Click here to check our exhibition!</p></a>
-    <p class="pared">A little bit of our French culture in your favourite cafe!</p>
+    <p class="red-part">A little bit of our French culture in your favourite cafe!</p>
   </div>
 
   <footer>

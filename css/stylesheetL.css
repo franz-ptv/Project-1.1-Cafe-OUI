@@ -848,7 +848,7 @@ text-decoration: underline;
 .link_exh:hover{
     color: rgb(28, 24, 5);
 }
-.pared{
+.red-part{
 display:flex ;
 justify-content: center;
 align-items:center ;

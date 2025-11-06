@@ -829,7 +829,7 @@ Here starts the third part (red part)
 .link_exh:hover{
     color: rgb(235, 232, 216);
 }
-.pared{
+.red-part{
     display:flex ;
     justify-content: center;
     align-items:center ;

@@ -121,7 +121,7 @@ unset($lang_options[$current_lang]);
     <div class="line_beige"></div>
     <div class="line_beige"></div>
     <a href="impressionFR.php"><p class="link_exh">Cliquez ici pour voir notre exposition!</p></a>
-    <p class="pared">Un peu de culture française dans votre café préféré!</p>
+    <p class="red-part">Un peu de culture française dans votre café préféré!</p>
   </div>
 
   <footer>
