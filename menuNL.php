@@ -103,7 +103,7 @@ unset($lang_options[$current_lang]);
       <li>Huisgemaakte limonade </li>
       <li>Sinasappelsap </li>
       <li>Appelsap </li>
-      <li>IJsthee </li>
+      <li>Ijsthee </li>
       <li>water</li>
       <li>Bruisend water</li>
     </ul>
