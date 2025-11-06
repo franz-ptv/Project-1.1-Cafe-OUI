@@ -40,6 +40,11 @@ body{
     border-radius: 4px;
     white-space: nowrap;
 }
+ 
+.navbar a:hover{
+    background-color: #74cbdf;
+}
+
 .navlinks a:hover {
     background-color: rgb(105, 182, 200);
 }
