@@ -6,7 +6,7 @@ body{
 /* Here starts the NavBar*/
 
 .navbar {
-     display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(21, 100, 123);
@@ -19,6 +19,7 @@ body{
     align-self: flex-start;
 }
 .logo {
+    font-family: 'CirularStd-medium', sans-serif;
     font-size: 50px;
     font-weight: bold;
     color: rgb(237, 229, 187);
@@ -40,6 +41,7 @@ body{
     text-align: center;
     border-radius: 4px;
     white-space: nowrap;
+    font-family: 'CirularStd-medium', sans-serif;
 }
 .navlinks a:hover {
     background-color: rgb(16, 75, 93);
@@ -221,6 +223,7 @@ body{
     gap: 18px;
     padding-left: 50px;
     padding-top: 45px;
+    font-family: 'CirularStd-medium', sans-serif;
 }
 .footer_links_row{
     margin-top: 20px;
@@ -272,6 +275,7 @@ body{
     font-weight: bold;
     letter-spacing: 1px;
     transition: color 0.3s;
+    font-family: 'CirularStd-medium', sans-serif;
 }
 .logo_footer:hover{
     color: rgb(173, 164, 119);
@@ -310,6 +314,7 @@ body{
     font-weight: 500;
     font-size: 1.3rem;
     color: #fff;
+    font-family: 'CirularStd-medium', sans-serif;
 }
 .box3 ul{
     list-style: none;
@@ -319,6 +324,7 @@ body{
 .box3 ul li{
     font-size: 1.1rem;
     padding: 0.5px 0;
+    font-family: 'CirularStd-medium', sans-serif;
 }
 
 /* responsive adjustments for the footer*/
@@ -392,8 +398,9 @@ background-color: rgb(237, 229, 187);
 Here starts the second part (beige part)
 */
 .cest{
-    font-size: 3em;
+    font-size: 2.5em;
     color: rgb(21, 100, 123);
+    font-family: 'CirularStd-medium', sans-serif;
 }
 .menu_button{
     display: inline-block;
@@ -410,6 +417,7 @@ Here starts the second part (beige part)
     cursor: pointer;
     user-select: none;
     transition: all 0.5s;
+    font-family: 'CirularStd-medium', sans-serif;
 }
 .menu_button:hover{
     background-color: rgba(21, 99, 123, 0.85);
@@ -418,8 +426,9 @@ Here starts the second part (beige part)
     border-radius: 35px;
 }
 .delicious{
-    font-size: 2.5em;
+    font-size: 2.2em;
     color: rgb(21, 100, 123);
+    font-family: 'CirularStd-medium', sans-serif;
 }
 .secondimg {
     width: 100%;
@@ -808,23 +817,25 @@ Here starts the third part (red part)
     background-color: rgb(149, 38, 31);
 }
 .link_exh{
-display:flex ;
-justify-content: center;
-align-items:center ;
-padding-top: 10px;
-font-size: 2em;
-color: white;
-text-decoration: underline;
+    display:flex ;
+    justify-content: center;
+    align-items:center ;
+    padding-top: 10px;
+    font-size: 2em;
+    color: white;
+    text-decoration: underline;
+    font-family: 'CirularStd-medium', sans-serif;
 }
 .link_exh:hover{
     color: rgb(235, 232, 216);
 }
 .pared{
-display:flex ;
-justify-content: center;
-align-items:center ;
-font-size: 2em;
-color: white;
+    display:flex ;
+    justify-content: center;
+    align-items:center ;
+    font-size: 2em;
+    color: white;
+    font-family: 'CirularStd-medium', sans-serif;
 }
 
 /* Here ends Franzs part*/

@@ -5,7 +5,7 @@ body{
 /* Here starts the NavBar*/
 
 .navbar {
-     display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(133, 233, 255);
@@ -13,15 +13,18 @@ body{
     margin: 0;
     font-size: 130%;
     flex-wrap: wrap;
+    font-family: 'CirularStd-medium', sans-serif;
 }
 .navlogo {
     align-self: flex-start;
+    font-family: 'CirularStd-medium', sans-serif;
 }
 .logo {
     font-size: 50px;
     font-weight: bold;
     color: rgb(68, 59, 18);
     text-decoration: none;
+    font-family: 'CirularStd-medium', sans-serif;
 }
 .logo:hover{
     background-color: rgb(123, 223, 245);
@@ -39,6 +42,7 @@ body{
     text-align: center;
     border-radius: 4px;
     white-space: nowrap;
+    font-family: 'CirularStd-medium', sans-serif;
 }
 .navlinks a:hover {
     background-color: rgb(119, 208, 228);
@@ -55,6 +59,7 @@ body{
     border: none;
     cursor: pointer;
     white-space: nowrap;
+    font-family: 'CirularStd-medium', sans-serif;
 }
 @media (max-width: 900px){
     .navbar{
@@ -216,6 +221,7 @@ body{
     gap: 18px;
     padding-left: 50px;
     padding-top: 45px;
+    font-family: 'CirularStd-medium', sans-serif;
 }
 .footer_links_row{
     margin-top: 20px;
@@ -270,6 +276,7 @@ body{
     font-weight: bold;
     letter-spacing: 1px;
     transition: color 0.3s;
+    font-family: 'CirularStd-medium', sans-serif;
 }
 .logo_footer:hover{
     color: rgb(111, 96, 30);
@@ -401,6 +408,7 @@ Here starts the second part (beige part)
 .cest{
     font-size: 3em;
     color: rgb(133, 233, 255);
+    font-family: 'CirularStd-medium', sans-serif;
 }
 
 .menu_button{
@@ -430,6 +438,7 @@ Here starts the second part (beige part)
 .delicious{
     font-size: 2.5em;
     color: rgb(133, 233, 255);
+    font-family: 'CirularStd-medium', sans-serif;
 }
 
 .secondimg {
