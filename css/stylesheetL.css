@@ -1136,7 +1136,7 @@ Impression part */
 .inspiration 
 {
     background: linear-gradient(rgba(133, 233, 255,0.6), rgba(133, 233, 255,0.6)),
-    url('assets/images/about-us/about_us_bottom.png') center/cover no-repeat;
+    url('../assets/images/about-us/about_us_bottom.png') center/cover no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
