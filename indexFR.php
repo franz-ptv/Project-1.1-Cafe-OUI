@@ -106,7 +106,7 @@ unset($lang_options[$current_lang]);
     <div class="line_blue"></div>
       <div class = "mid_screen">
         <div><p class="cest">C'est delicieux!</p></div>
-          <a href="menuFR.php" class = "menu_button" >Découvrez notre menu</a>
+          <a href="menuFR.php" class = "menu_button" >Menu</a>
         <div><p class="delicious">Incroyablement bon!</p></div>
       </div>
   <img src="assets/images/home-page/croissant.png" class="croissant_pic" alt="">
