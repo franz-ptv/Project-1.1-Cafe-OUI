@@ -195,7 +195,7 @@ unset($lang_options[$current_lang]);
             </div>
 
             <div class = "box2">
-                <a href="index.php" class = "logo_footer">OUI</a>
+                <a href="404.php" class = "logo_footer">OUI</a>
                 <div class = "social_icons">
                 <a href="https://facebook.com" target="_blank">
                     <img src="assets/images/home-page/facebook-svgrepo-com.svg" alt="Facebook icon">
