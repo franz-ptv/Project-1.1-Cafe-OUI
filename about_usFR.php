@@ -132,7 +132,7 @@ unset($lang_options[$current_lang]);
         C’est un lieu où l’art respire, où la galerie rencontre l’arôme du café torréfié, et où le quotidien devient lui-même une exposition. 
         Ici, dans ce café français, le musée n’est pas un bâtiment à visiter – c’est la vie elle-même qui se déroule, capturée dans la peinture, la conversation et le doux tintement des tasses en porcelaine. 
     </div>
-    <a class="button-about" href="impression.php" target="_blank" class="button">
+    <a class="button-about" href="impressionFR.php" target="_blank" class="button">
         Découvrez aussi notre dernière exposition. 
     </a>
     </section>

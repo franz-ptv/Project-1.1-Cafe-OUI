@@ -126,7 +126,7 @@ Het is een plek waar kunst ademt, waar de galerie zich vermengt met het aroma va
 
 Hier, in dit Franse café, is het museum geen gebouw om te bezoeken – het is het leven zelf dat zich ontvouwt, vastgelegd in verf, gesprek en het zachte klingelen van porseleinen kopjes. 
     </div>
-    <a class="button-about" href="impression.php" target="_blank" class="button">
+    <a class="button-about" href="impressionNL.php" target="_blank" class="button">
         Neem ook een kijkje bij onze laatste tentoonstelling 
     </a>
     </section>
