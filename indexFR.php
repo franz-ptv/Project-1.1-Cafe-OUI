@@ -1,30 +1,93 @@
+<?php
+session_start(); // Start or resume the session
+
+// Default: dark mode on first visit
+if (!isset($_SESSION['mode'])) {
+    $_SESSION['mode'] = 'dark';
+}
+
+// Handle toggle POST form
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['toggle_mode'])) {
+    $_SESSION['mode'] = ($_SESSION['mode'] === 'dark') ? 'light' : 'dark';
+}
+?>
+
+<?php
+$current_file = basename($_SERVER['PHP_SELF']);
+
+switch ($current_file) {
+    case 'indexFR.php':
+        $current_lang = 'fr';
+        $current_lang_text = 'FR';
+        break;
+    case 'indexNL.php':
+        $current_lang = 'nl';
+        $current_lang_text = 'NL';
+        break;
+    default:
+        $current_lang = 'en';
+        $current_lang_text = 'EN';
+        break;
+}
+
+$lang_options = [
+    'en' => ['text' => 'EN', 'page' => 'index.php'],
+    'fr' => ['text' => 'FR', 'page' => 'indexFR.php'],
+    'nl' => ['text' => 'NL', 'page' => 'indexNL.php'],
+];
+
+unset($lang_options[$current_lang]);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalabe=no ">
     <title>Café OUI</title>
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <!-- <link rel="stylesheet" href="css/stylesheet.css"> -->
+    <link rel="stylesheet" href="css/<?php echo ($_SESSION['mode'] === 'dark') ? 'stylesheetD.css' : 'stylesheetL.css'; ?>">
     <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
-    <link rel="icon" type="image/x-icon" href="images/navigation-bar/fav.png">
+    <link rel="icon" type="image/x-icon" href="assets/images/navigation-bar/fav.png">
 </head>
 
 <body>
-
+<div class = "body_main_page">
 <nav class="navbar">
  <div class="navlogo">
-    <a class="logo" href="index.php">OUI</a>
+    <a class="logo" href="indexFR.php">OUI</a>
  </div>
  <div class="navlinks">
-    <a href="index.php">Home</a>
-    <a href="menu.php">Menu</a>
-    <a href="about_us.php">À propos</a>
-    <a href="impression.php">Impression</a>
-    <a href="contact.php">Contact</a>
+    <a href="indexFR.php">Home</a>
+    <a href="menuFR.php">Menu</a>
+    <a href="about_usFR.php">À propos</a>
+    <a href="impressionFR.php">Impression</a>
+    <a href="contactFR.php">Contact</a>
  </div>
  <div class="navactions">
-    <button>Language</button>
-    <button>Dark/Light</button>
+    <div class="language-dropdown">
+    <button class="lang-select">
+        <img src="assets/images/flags/<?php echo $current_lang; ?>.png" alt="<?php echo $current_lang_text; ?> Flag" class="flag-icon">
+        <?php echo $current_lang_text; ?>
+        <span class="arrow">&#9662;</span>
+    </button>
+    <ul class="lang-menu">
+        <?php foreach($lang_options as $lang_code => $lang): ?>
+            <li>
+                <a href="<?php echo $lang['page']; ?>">
+                    <img src="assets/images/flags/<?php echo $lang_code; ?>.png" alt="<?php echo $lang['text']; ?> Flag" class="flag-icon">
+                    <?php echo $lang['text']; ?>
+                </a>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+</div>
+
+    <form method="POST" style="display:inline;">
+        <button type="submit" name="toggle_mode">
+            Cliquer pour <?php echo ($_SESSION['mode'] === 'dark') ? 'Light' : 'Dark'; ?> Mode
+        </button>
+    </form>
  </div>
 </nav>
 
@@ -108,5 +171,6 @@
     </div>
   </footer>
   
+</div>
 </body>
 </html>

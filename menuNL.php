@@ -27,7 +27,7 @@ unset($lang_options[$current_lang]);
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="FR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,17 +38,18 @@ unset($lang_options[$current_lang]);
 
 </head>
 <body>
+  <body class="body_impression">
 
 <nav class="navbar">
  <div class="navlogo">
     <a class="logo" href="index.php">OUI</a>
  </div>
  <div class="navlinks">
-    <a href="index.php">Home</a>
-    <a href="menu.php">Menu</a>
-    <a href="about_us.php">About Us</a>
-    <a href="impression.php">Impression</a>
-    <a href="contact.php">Contact us</a>
+    <a href="indexNL.php">Home</a>
+    <a href="menuNL.php">Menu</a>
+    <a href="about_usNL.php">Over ons</a>
+    <a href="impressionNL.php">Impressie</a>
+    <a href="contactNL.php">Contact </a>
  </div>
  <div class="navactions">
     <div class="language-dropdown">
@@ -84,30 +85,29 @@ unset($lang_options[$current_lang]);
     <div class="tea-section">
       <img src="assets/images/menu/tea.png" alt="tea">
       <span class="side-text">Green tea</span>
-      <h1>Tea</h1>
+      <h1>Thee</h1>
       <ul>
-        <li>Black tea</li>
-        <li>Green tea</li>
-        <li>Herbal tea</li>
-        <li>Jasmine tea</li>
-        <li>Rooibos tea</li>
+        <li>Zwarte thee </li>
+        <li>Groene thee </li>
+        <li>Kruidenthee </li>
+        <li>Kruidenthee </li>
+        <li>Rooibos thee </li>
       </ul>
     </div>
   </div>
 
   <!-- Cool drinks section -->
   <div class="center-section">
-    <h1>Cool drinks</h1>
+    <h1>Koude dranken</h1>
     <ul>
-      <li>Home-made lemonade</li>
-      <li>Jus d'orange</li>
-      <li>Apple juice</li>
-      <li>Ice tea</li>
-      <li>Flat water</li>
-      <li>Sparkling water</li>
+      <li>Huisgemaakte limonade </li>
+      <li>Sinasappelsap </li>
+      <li>Appelsap </li>
+      <li>Ijsthee </li>
+      <li>water</li>
+      <li>Bruisend water</li>
     </ul>
-
-    <h1>Hot Drinks</h1>
+    <h1>>Warme dranken</h1>
     <ul>
       <li>Cappuccino</li>
       <li>Latte</li>
@@ -115,6 +115,9 @@ unset($lang_options[$current_lang]);
       <li>Espresso</li>
       <li>Americano</li>
       <li>Flat white</li>
+    </ul>
+
+
     </ul>
   </div>
 
@@ -145,40 +148,40 @@ unset($lang_options[$current_lang]);
 
   <div class="content">
     <div class="section croissant">
-      <h1>Hot Drinks</h1>
+      <h1> Pain – Croissant of Petit Pain<</h1>
       <ul>
-        <li>Pain – Croissant or Petit Pain</li>
-        <li>Nature/plain</li>
-        <li>Butter</li>
-        <li>Herb butter</li>
-        <li>Jam or Nutella</li>
-        <li>Brie or camembert</li>
-        <li>Cheese with walnuts</li>
-        <li>Cream cheese</li>
-        <li>Soft goat cheese</li>
-        <li>Smoked salmon</li>
-        <li>Tuna salad</li>
-        <li>Egg salad</li>
-        <li>Hummus</li>
-        <li>French ragout</li>
+      <li>Naturel/kaal </li>
+      <li>Boter  </li>
+      <li>Kruidenthee </li>
+      <li>Jam of Nutella  </li>
+      <li>Brie of camembert </li>
+      <li>Kaas met walnoten </li>
+      <li>Roomkaas </li>
+      <li>Zachte geitenkaas </li>
+      <li>Gerookte zalm </li>
+      <li>Tonijnsalade </li>
+      <li>Eiersalade </li>
+      <li>Hummus </li>
+      <li>Franse ragout </li>
+        
       </ul>
     </div>
 
     <div class="section sweets">
-      <h1>Sweets</h1>
+      <h1>Zoete snacks </h1>
       <ul>
-        <li>Macarons (3 pieces)</li>
-        <li>Vanilla</li>
-        <li>Strawberries and cream</li>
+        <li>Macarons (per 3) </li>
+        <li>Vanille</li>
+        <li>Aardbeien en room </li>
         <li>Lemon Curd</li>
-        <li>Cookies and cream</li>
-        <li>Blueberry</li>
-        <li>Chocolate</li>
-        <li>Mocha/Coffee</li>
+        <li>Koekjes en room </li>
+        <li>Blauwe bessen </li>
+        <li>Chocolade </li>
+        <li>Mokka/koffie </li>
         <li>Paris-Brest</li>
-        <li>Cream puffs</li>
+        <li>Soesjes </li>
         <li>Eclair</li>
-        <li>Millefeuille</li>
+        <li>Mille feuille</li>
       </ul>
     </div>
   </div>
@@ -189,9 +192,7 @@ unset($lang_options[$current_lang]);
   </div>
 
   <div class="button-container">
-   <a href="assets/images/menu/croissant.png" alt="a picture of croissant"> 
-  <button>download menu</button>
-  </a> 
+    <button>download menu</button>
   </div>
 </div>
 
@@ -201,12 +202,12 @@ unset($lang_options[$current_lang]);
       <div class = "box1">
         <div class = "footer_links_row">
           <a href="index.php">Home</a>
-          <a href="about_us.php">About us</a>
-          <a href="contact.php">Contact us</a>
+          <a href="about_us.php">Over ons</a>
+          <a href="contact.php">Contact</a>
         </div>
         <div class = "footer_links_row">
           <a href="menu.php">Menu</a>
-          <a href="impression.php">Impression</a>
+          <a href="impression.php">Impressie</a>
         </div>
       </div>
 
@@ -225,19 +226,19 @@ unset($lang_options[$current_lang]);
         </div>
       </div>
 
-      <div class ="box3">
-        <h3>Adress: Van Schaikweg 94, 7811KL Emmen</h3>
-        <h4>Working hours:</h4>
-        <ul>
-          <li>Mon  - Closed</li>
-          <li>Tues - 09:00 - 17:00</li>
-          <li>Wed - 09:00 - 17:00</li>
-          <li>Thurs - 09:00 - 17:00</li>
-          <li>Fri - 09:00 - 17:00</li>
-          <li>Sat - 09:00 - 17:00</li>
-          <li>Sun - 09:00 - 17:00</li>
-        </ul>
-      </div>
+     <div class="box3">
+  <h3>Adresse : Van Schaikweg 94, 7811KL Emmen</h3>
+  <h4>Heures d'ouverture :</h4>
+  <ul>
+    <li>ma   – Gesloten</li>
+    <li>di   – 09:00 - 17:00</li>
+    <li>woe  – 09:00 - 17:00</li>
+    <li>do   – 09:00 - 17:00</li>
+    <li>Vrij – 09:00 - 17:00</li>
+    <li>zat  – 09:00 - 17:00</li>
+    <li>zon  – 09:00 - 17:00</li>
+  </ul>
+</div>
 
     </div>
   </footer>
