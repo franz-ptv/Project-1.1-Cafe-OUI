@@ -148,10 +148,9 @@ unset($lang_options[$current_lang]);
 
   <div class="content">
     <div class="section croissant">
-      <h1>Warme dranken </h1>
+      <h1> Pain – Croissant of Petit Pain<</h1>
       <ul>
-        <li>Pain – Croissant of Petit Pain</li>
-        <li>Naturel/kaal </li>
+      <li>Naturel/kaal </li>
       <li>Boter  </li>
       <li>Kruidenthee </li>
       <li>Jam of Nutella  </li>
