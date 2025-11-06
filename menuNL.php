@@ -85,13 +85,13 @@ unset($lang_options[$current_lang]);
     <div class="tea-section">
       <img src="assets/images/menu/tea.png" alt="tea">
       <span class="side-text">Green tea</span>
-      <h1>Tea</h1>
+      <h1>Thee</h1>
       <ul>
-        <li>Black tea</li>
-        <li>Green tea</li>
-        <li>Herbal tea</li>
-        <li>Jasmine tea</li>
-        <li>Rooibos tea</li>
+        <li>Zwarte thee </li>
+        <li>Groene thee </li>
+        <li>Kruidenthee </li>
+        <li>Kruidenthee </li>
+        <li>Rooibos thee </li>
       </ul>
     </div>
   </div>
@@ -101,21 +101,23 @@ unset($lang_options[$current_lang]);
     <h1>Koude dranken</h1>
     <ul>
       <li>Huisgemaakte limonade </li>
-      <li>Sinasappelsap </li>S
+      <li>Sinasappelsap </li>
       <li>Appelsap </li>
-      <li>IJsthee </li>
+      <li>Ijsthee </li>
       <li>water</li>
       <li>Bruisend water</li>
     </ul>
-
-    <h1>Thee</h1>
+    <h1>>Warme dranken</h1>
     <ul>
-      <li>Zwarte thee</li>
-      <li>Groene thee</li>
-      <li>Kruidenthee </li>
-      <li>Jasmijn thee </li>
+      <li>Cappuccino</li>
+      <li>Latte</li>
+      <li>Mocha</li>
+      <li>Espresso</li>
       <li>Americano</li>
-      <li>Rooibos thee </li>
+      <li>Flat white</li>
+    </ul>
+
+
     </ul>
   </div>
 
@@ -146,40 +148,40 @@ unset($lang_options[$current_lang]);
 
   <div class="content">
     <div class="section croissant">
-      <h1>Warme dranken </h1>
+      <h1> Pain – Croissant of Petit Pain<</h1>
       <ul>
-        <li>Pain – Croissant or Petit Pain</li>
-        <li>Nature/plain</li>
-        <li>Beurre</li>
-        <li>Herb bu</li>
-        <li>Jam or Nutella</li>
-        <li>Brie or camembert</li>
-        <li>Cheese with walnuts</li>
-        <li>Cream cheese</li>
-        <li>Soft goat cheese</li>
-        <li>Smoked salmon</li>
-        <li>Tuna salad</li>
-        <li>Egg salad</li>
-        <li>Hummus</li>
-        <li>French ragout</li>
+      <li>Naturel/kaal </li>
+      <li>Boter  </li>
+      <li>Kruidenthee </li>
+      <li>Jam of Nutella  </li>
+      <li>Brie of camembert </li>
+      <li>Kaas met walnoten </li>
+      <li>Roomkaas </li>
+      <li>Zachte geitenkaas </li>
+      <li>Gerookte zalm </li>
+      <li>Tonijnsalade </li>
+      <li>Eiersalade </li>
+      <li>Hummus </li>
+      <li>Franse ragout </li>
+        
       </ul>
     </div>
 
     <div class="section sweets">
-      <h1>Sweets</h1>
+      <h1>Zoete snacks </h1>
       <ul>
-        <li>Macarons (3 pieces)</li>
-        <li>Vanilla</li>
-        <li>Strawberries and cream</li>
+        <li>Macarons (per 3) </li>
+        <li>Vanille</li>
+        <li>Aardbeien en room </li>
         <li>Lemon Curd</li>
-        <li>Cookies and cream</li>
-        <li>Blueberry</li>
-        <li>Chocolate</li>
-        <li>Mocha/Coffee</li>
+        <li>Koekjes en room </li>
+        <li>Blauwe bessen </li>
+        <li>Chocolade </li>
+        <li>Mokka/koffie </li>
         <li>Paris-Brest</li>
-        <li>Cream puffs</li>
+        <li>Soesjes </li>
         <li>Eclair</li>
-        <li>Millefeuille</li>
+        <li>Mille feuille</li>
       </ul>
     </div>
   </div>

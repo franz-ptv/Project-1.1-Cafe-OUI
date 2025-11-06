@@ -101,7 +101,7 @@ unset($lang_options[$current_lang]);
     <h1>Cool drinks</h1>
     <ul>
       <li>Limonade faite a la maison</li>
-      <li>Jus d'orange</li>S
+      <li>Jus d'orange</li>
       <li>jus de pomme</li>
       <li>Eau Glace</li>
       <li>Eau Plate</li>

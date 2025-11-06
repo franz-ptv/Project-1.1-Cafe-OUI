@@ -100,7 +100,7 @@ unset($lang_options[$current_lang]);
     <h1>Cool drinks</h1>
     <ul>
       <li>Home-made lemonade</li>
-      <li>Jus d'orange</li>S
+      <li>Jus d'orange</li>
       <li>Apple juice</li>
       <li>Ice tea</li>
       <li>Flat water</li>
@@ -189,7 +189,9 @@ unset($lang_options[$current_lang]);
   </div>
 
   <div class="button-container">
-   <a href="menu.php"></a> <button>download menu</button>
+   <a href="assets/images/menu/croissant.png" alt="a picture of croissant"> 
+  <button>download menu</button>
+  </a> 
   </div>
 </div>
 
